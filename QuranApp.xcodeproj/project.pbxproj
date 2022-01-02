@@ -2047,7 +2047,7 @@
 				0628D74B250F489E00E9FBBA /* Sources */,
 				0628D74C250F489E00E9FBBA /* Frameworks */,
 				0628D74D250F489E00E9FBBA /* Resources */,
-				F055184C571184914E6A7BCF /* [CP] Embed Pods Frameworks */,
+				9975A37780504B9716E64265 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2235,7 +2235,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F055184C571184914E6A7BCF /* [CP] Embed Pods Frameworks */ = {
+		9975A37780504B9716E64265 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2730,6 +2730,7 @@
 				DEVELOPMENT_TEAM = 4673NFB24A;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = QuranApp/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2757,6 +2758,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4673NFB24A;
 				INFOPLIST_FILE = QuranApp/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

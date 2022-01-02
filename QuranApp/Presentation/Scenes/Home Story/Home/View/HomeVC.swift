@@ -410,10 +410,10 @@ extension LGSideMenuController {
     func show() -> HomeSliderVC {
         var vc: HomeSliderVC
         if UIApplication.isArabic {
-            self.showRightViewAnimated()
+            self.showRightViewAnimated(sender: self)
             vc = self.rightViewController as! HomeSliderVC
         }else {
-            self.showLeftViewAnimated()
+            self.showLeftViewAnimated(sender: self)
             vc = self.leftViewController as! HomeSliderVC
         }
         return vc
