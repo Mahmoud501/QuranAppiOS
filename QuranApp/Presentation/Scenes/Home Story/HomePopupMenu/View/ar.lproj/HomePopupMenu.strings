@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Surha"; ObjectID = "AqI-Ez-xbG"; */
+"AqI-Ez-xbG.normalTitle" = "سور";
+
+/* Class = "UIButton"; normalTitle = "Page"; ObjectID = "Mfh-Bb-w9Z"; */
+"Mfh-Bb-w9Z.normalTitle" = "صفحات";
+
+/* Class = "UIButton"; normalTitle = "Juzh"; ObjectID = "V7R-Nb-WAP"; */
+"V7R-Nb-WAP.normalTitle" = "اجزاء";
+
+/* Class = "UILabel"; text = "Select Home Type"; ObjectID = "n1g-z9-12n"; */
+"n1g-z9-12n.text" = "اختر نوع التصفح الذي تريده";

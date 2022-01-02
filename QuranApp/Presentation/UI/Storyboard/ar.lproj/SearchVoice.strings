@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Voice Keywords"; ObjectID = "1w9-OM-czm"; */
+"1w9-OM-czm.text" = "كلمات البحث الصوتية";
+
+/* Class = "UILabel"; text = "Search"; ObjectID = "4yF-3b-19D"; */
+"4yF-3b-19D.text" = "بحث صوتي";
+
+/* Class = "UILabel"; text = "TAB TO RECORD"; ObjectID = "9EL-7g-adL"; */
+"9EL-7g-adL.text" = "اضغط طويلا للتسجيل";
+
+/* Class = "UILabel"; text = "All keywords here.."; ObjectID = "a0Q-j1-jAX"; */
+"a0Q-j1-jAX.text" = "كل كلمات البحث هنا..";
+
+/* Class = "UILabel"; text = "Search by keywords"; ObjectID = "jYa-fP-UlP"; */
+"jYa-fP-UlP.text" = "كلمات البحث";
+
+
+"g8l-1z-5uN.text" = "يمكنك ايضا التسجيل من خلال الضفط بالزر الاسفل وهو زرار البحث الصوتي";

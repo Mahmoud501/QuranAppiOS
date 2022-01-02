@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "العنوان"; ObjectID = "3gC-Vx-Tm3"; */
+"3gC-Vx-Tm3.text" = "العنوان";
+
+/* Class = "UILabel"; text = "الوصف"; ObjectID = "BwP-Sk-hAb"; */
+"BwP-Sk-hAb.text" = "الوصف";
+
+/* Class = "UILabel"; text = "السلام عليكم ورحمة الله وبركاتة"; ObjectID = "CFA-5C-Z9l"; */
+"CFA-5C-Z9l.text" = "السلام عليكم ورحمة الله وبركاتة";
+
+/* Class = "UILabel"; text = "تطبيق حفظ القران"; ObjectID = "Nbv-6c-dgv"; */
+"Nbv-6c-dgv.text" = "تطبيق حفظ القران";
+
+/* Class = "UILabel"; text = "تطبيق حفظ القران"; ObjectID = "WdA-qg-kNJ"; */
+"WdA-qg-kNJ.text" = "تطبيق حفظ القران";
+
+/* Class = "UILabel"; text = "تحميل القران الكريم ..."; ObjectID = "bxq-oA-QGO"; */
+"bxq-oA-QGO.text" = "تحميل القران الكريم ...";
+
+/* Class = "UIButton"; normalTitle = "حفظ & بدء"; ObjectID = "f5u-wt-SZ4"; */
+"f5u-wt-SZ4.normalTitle" = "حفظ & بدء";
+
+/* Class = "UILabel"; text = "من فضلك ادخل بياناتك مع اعداداتك المفضلة"; ObjectID = "gWA-4c-GOU"; */
+"gWA-4c-GOU.text" = "من فضلك ادخل بياناتك مع اعداداتك المفضلة";
+
+/* Class = "UIButton"; normalTitle = "التالي"; ObjectID = "pAT-eS-L8R"; */
+"pAT-eS-L8R.normalTitle" = "التالي";

@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "Message"; ObjectID = "45p-xQ-AcE"; */
+"45p-xQ-AcE.text" = "الرسالة";
+
+/* Class = "UILabel"; text = "Send us your opinion , suggestion, complain any thing is welcome to send to improve your application ☺️🥰"; ObjectID = "8r8-Fx-btO"; */
+"8r8-Fx-btO.text" = "ارسل لنا رايك واقتراحك وشكواك اي شئ مرحب به لارسال من اجل تحسين اداء التطبيق ☺️🥰";
+
+/* Class = "UILabel"; text = "Setting"; ObjectID = "AEI-Hh-Yym"; */
+"AEI-Hh-Yym.text" = "الاعدادات";
+
+/* Class = "UILabel"; text = "Welcome, Mohannad"; ObjectID = "Gth-eX-gfO"; */
+"Gth-eX-gfO.text" = "اهلا مهند";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "H7n-kO-apl"; */
+"H7n-kO-apl.normalTitle" = "ارسال";
+
+/* Class = "UILabel"; text = "How to use"; ObjectID = "Icu-Df-cG1"; */
+"Icu-Df-cG1.text" = "كيفية الاستخدام";
+
+/* Class = "UILabel"; text = "Select your favorite Reciter"; ObjectID = "KE6-ME-EJD"; */
+"KE6-ME-EJD.text" = "اختار قارئك المفضل";
+
+/* Class = "UILabel"; text = "Quran App"; ObjectID = "MlU-Q7-oNb"; */
+"MlU-Q7-oNb.text" = "تطبيق حفظ القران";
+
+/* Class = "UILabel"; text = "About us"; ObjectID = "eRq-mc-tJ5"; */
+"eRq-mc-tJ5.text" = "من نحن";
+
+/* Class = "UILabel"; text = "Select Tafseer"; ObjectID = "miF-rk-VIb"; */
+"miF-rk-VIb.text" = "اختار التفسير";
+
+/* Class = "UILabel"; text = "Contact us"; ObjectID = "q4H-Ps-Hwb"; */
+"q4H-Ps-Hwb.text" = "تواصل معانا";
+
+"hJy-SW-jFM.text" = "اعدادات القرأن الكريم";
+
+"qhU-5e-qXf.text" = "هل تريد القرأن الكريم مشكل؟";
+
+"E16-6X-QTA.normalTitle" = "حفظ";

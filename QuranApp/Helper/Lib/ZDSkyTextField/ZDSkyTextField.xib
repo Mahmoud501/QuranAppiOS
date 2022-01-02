@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZDSkyTextField" customModule="QuranApp" customModuleProvider="target">
+            <connections>
+                <outlet property="CLeadingView" destination="yjt-ya-qkD" id="z82-bU-CPy"/>
+                <outlet property="activity" destination="ibR-fk-Erc" id="wON-Jx-C4s"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="RcO-yU-ePH"/>
+                <outlet property="dropDownIcon" destination="3Ib-El-Zz4" id="IkJ-db-sE5"/>
+                <outlet property="icon" destination="9Ca-gF-9R4" id="QkQ-Wy-nJY"/>
+                <outlet property="lblLine" destination="Deo-Ur-SeA" id="Dhc-ne-kFG"/>
+                <outlet property="lblPlaceHolder" destination="DbM-gA-DvM" id="izS-dc-KpB"/>
+                <outlet property="textField" destination="744-qw-bYH" id="d8h-po-5J2"/>
+                <outlet property="vuContain" destination="dz3-SK-KPn" id="9bV-Dl-o7P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="85"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dz3-SK-KPn">
+                    <rect key="frame" x="0.0" y="30" width="345" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="8fU-4r-2Py">
+                            <rect key="frame" x="25" y="0.0" width="310" height="50"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon zocial-email" translatesAutoresizingMaskIntoConstraints="NO" id="9Ca-gF-9R4">
+                                    <rect key="frame" x="0.0" y="0.0" width="25" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="HeJ-gD-qGl">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                        </constraint>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="744-qw-bYH">
+                                    <rect key="frame" x="36" y="0.0" width="212" height="50"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ibR-fk-Erc">
+                                    <rect key="frame" x="259" y="0.0" width="20" height="50"/>
+                                </activityIndicatorView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit" translatesAutoresizingMaskIntoConstraints="NO" id="3Ib-El-Zz4">
+                                    <rect key="frame" x="290" y="0.0" width="20" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="0uR-pI-0GJ">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                                        </constraint>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="8fU-4r-2Py" secondAttribute="bottom" id="8Fa-ov-SR7"/>
+                        <constraint firstItem="8fU-4r-2Py" firstAttribute="top" secondItem="dz3-SK-KPn" secondAttribute="top" id="eZn-XM-RHC"/>
+                        <constraint firstAttribute="trailing" secondItem="8fU-4r-2Py" secondAttribute="trailing" constant="10" id="yWx-hm-qID">
+                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                        </constraint>
+                        <constraint firstItem="8fU-4r-2Py" firstAttribute="leading" secondItem="dz3-SK-KPn" secondAttribute="leading" constant="25" id="yjt-ya-qkD"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbM-gA-DvM">
+                    <rect key="frame" x="0.0" y="3.5" width="345" height="26.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Deo-Ur-SeA">
+                    <rect key="frame" x="0.0" y="80" width="345" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="1Hv-hZ-9Oj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Deo-Ur-SeA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CV1-Nf-CO3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dz3-SK-KPn" secondAttribute="bottom" constant="5" id="EKA-t6-GPQ"/>
+                <constraint firstItem="dz3-SK-KPn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ibh-TB-eRG"/>
+                <constraint firstItem="DbM-gA-DvM" firstAttribute="leading" secondItem="dz3-SK-KPn" secondAttribute="leading" id="NNO-Cw-BWb"/>
+                <constraint firstItem="dz3-SK-KPn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="bmW-zj-Gy8"/>
+                <constraint firstItem="DbM-gA-DvM" firstAttribute="trailing" secondItem="dz3-SK-KPn" secondAttribute="trailing" id="cHW-FC-c6T"/>
+                <constraint firstItem="dz3-SK-KPn" firstAttribute="top" secondItem="DbM-gA-DvM" secondAttribute="bottom" id="e4C-nh-Ro3"/>
+                <constraint firstAttribute="trailing" secondItem="Deo-Ur-SeA" secondAttribute="trailing" id="jM0-c7-Wic"/>
+                <constraint firstItem="Deo-Ur-SeA" firstAttribute="top" secondItem="dz3-SK-KPn" secondAttribute="bottom" id="mv7-n0-5rj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dz3-SK-KPn" secondAttribute="trailing" id="nrq-uo-HXS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-29.0625" y="-152.64084507042253"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon zocial-email" width="23.5" height="16"/>
+        <image name="edit" width="18" height="18"/>
+    </resources>
+</document>

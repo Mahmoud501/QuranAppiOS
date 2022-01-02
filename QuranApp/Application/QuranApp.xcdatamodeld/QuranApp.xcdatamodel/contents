@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="18G6020" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CAyatModel" representedClassName="CAyatModel" syncable="YES" codeGenerationType="class">
+        <attribute name="color" optional="YES" attributeType="String"/>
+        <attribute name="currentTafseerDesc" optional="YES" attributeType="String"/>
+        <attribute name="desc" attributeType="String"/>
+        <attribute name="error" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="isMemorized" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="isSelected" optional="YES" transient="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="simple_desc" optional="YES" attributeType="String"/>
+        <attribute name="simple_error" optional="YES" attributeType="String"/>
+        <attribute name="sort" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="juzh" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CJuzh"/>
+        <relationship name="page" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CPage"/>
+        <relationship name="surha" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CSurha"/>
+        <relationship name="tafseers" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CTafseerDetailModel" inverseName="ayah" inverseEntity="CTafseerDetailModel"/>
+    </entity>
+    <entity name="CJuzh" representedClassName="CJuzh" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="isSelected" optional="YES" transient="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name_ar" optional="YES" attributeType="String"/>
+        <attribute name="name_en" optional="YES" attributeType="String"/>
+        <attribute name="number_ayat" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="start" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="ayat" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CAyatModel"/>
+    </entity>
+    <entity name="CPage" representedClassName="CPage" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="isSelected" optional="YES" transient="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name_ar" optional="YES" attributeType="String"/>
+        <attribute name="name_en" optional="YES" attributeType="String"/>
+        <attribute name="number_ayat" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="start" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="ayat" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CAyatModel"/>
+    </entity>
+    <entity name="CReciter" representedClassName="CReciter" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="image_path" optional="YES" attributeType="String"/>
+        <attribute name="link" optional="YES" attributeType="String"/>
+        <attribute name="name_ar" optional="YES" attributeType="String"/>
+        <attribute name="name_en" optional="YES" attributeType="String"/>
+        <attribute name="sort" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CReciterAyat" representedClassName="CReciterAyat" syncable="YES" codeGenerationType="class">
+        <attribute name="ayah_id" optional="YES" attributeType="String"/>
+        <attribute name="localLink" optional="YES" attributeType="String"/>
+        <attribute name="reciter_id" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CSetting" representedClassName="CSetting" syncable="YES" codeGenerationType="class">
+        <attribute name="ayah_delay" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ayah_repeat" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ayatScrollDirection" optional="YES" attributeType="String"/>
+        <attribute name="current_quran_type" optional="YES" attributeType="String"/>
+        <attribute name="current_reciter" optional="YES" attributeType="String"/>
+        <attribute name="current_tafseer" optional="YES" attributeType="String"/>
+        <attribute name="font_type" optional="YES" attributeType="String"/>
+        <attribute name="isSingleSelection" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="mark_ayah_id" optional="YES" attributeType="String"/>
+        <attribute name="quran_font_size" optional="YES" attributeType="String"/>
+        <attribute name="quranWithMark" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="reciter_type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tafseer_font_size" optional="YES" attributeType="String"/>
+        <attribute name="temp_tafseer" optional="YES" attributeType="String"/>
+        <attribute name="total_test" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="user" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CSurha" representedClassName="CSurha" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="isSelected" optional="YES" transient="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name_ar" optional="YES" attributeType="String"/>
+        <attribute name="name_en" optional="YES" attributeType="String"/>
+        <attribute name="number_ayat" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="start" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="total_memory" optional="YES" attributeType="String"/>
+        <relationship name="ayat" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CAyatModel"/>
+    </entity>
+    <entity name="CTafseerDetailModel" representedClassName="CTafseerDetailModel" syncable="YES" codeGenerationType="class">
+        <attribute name="ayah_id" optional="YES" attributeType="String"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="tafseer_id" optional="YES" attributeType="String"/>
+        <relationship name="ayah" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CAyatModel" inverseName="tafseers" inverseEntity="CAyatModel"/>
+        <relationship name="tafseer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CTafseerModel"/>
+    </entity>
+    <entity name="CTafseerModel" representedClassName="CTafseerModel" syncable="YES" codeGenerationType="class">
+        <attribute name="downloaded" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="link" optional="YES" attributeType="String"/>
+        <attribute name="name_ar" optional="YES" attributeType="String"/>
+        <attribute name="name_en" optional="YES" attributeType="String"/>
+        <attribute name="sort" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="TTTest" representedClassName="TTTest" syncable="YES" codeGenerationType="class">
+        <attribute name="local" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="CAyatModel" positionX="-137.4375" positionY="-32.50390625" width="128" height="253"/>
+        <element name="CJuzh" positionX="-230.41015625" positionY="208.71484375" width="128" height="148"/>
+        <element name="CPage" positionX="58.953125" positionY="176.23046875" width="128" height="148"/>
+        <element name="CReciter" positionX="243.06640625" positionY="75.453125" width="128" height="148"/>
+        <element name="CReciterAyat" positionX="-18" positionY="36" width="128" height="88"/>
+        <element name="CSetting" positionX="-80.54296875" positionY="244.25390625" width="128" height="283"/>
+        <element name="CSurha" positionX="181.6328125" positionY="251.82421875" width="138.421875" height="163"/>
+        <element name="CTafseerDetailModel" positionX="176.01953125" positionY="-128.90234375" width="128" height="133"/>
+        <element name="CTafseerModel" positionX="-14.859375" positionY="-117.546875" width="128" height="133"/>
+        <element name="TTTest" positionX="-9" positionY="45" width="128" height="73"/>
+    </elements>
+</model>

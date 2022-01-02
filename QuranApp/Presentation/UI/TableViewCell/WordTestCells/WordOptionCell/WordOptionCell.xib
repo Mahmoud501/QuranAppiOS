@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="WordOptionCell" customModule="QuranApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EfL-hk-wd3">
+                        <rect key="frame" x="0.0" y="0.0" width="431" height="77"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wb8-Uo-dvB">
+                                <rect key="frame" x="20" y="28.5" width="20" height="20"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse 1" translatesAutoresizingMaskIntoConstraints="NO" id="vO2-nv-Z6q">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMN-rr-9LL">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <connections>
+                                            <action selector="selectClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Vk6-oC-02v"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tMN-rr-9LL" secondAttribute="trailing" id="2qz-JV-OHU"/>
+                                    <constraint firstAttribute="bottom" secondItem="tMN-rr-9LL" secondAttribute="bottom" id="8UB-eC-F33"/>
+                                    <constraint firstAttribute="trailing" secondItem="vO2-nv-Z6q" secondAttribute="trailing" id="8pE-bD-9bG"/>
+                                    <constraint firstItem="tMN-rr-9LL" firstAttribute="top" secondItem="wb8-Uo-dvB" secondAttribute="top" id="AW3-EF-vHi"/>
+                                    <constraint firstItem="vO2-nv-Z6q" firstAttribute="top" secondItem="wb8-Uo-dvB" secondAttribute="top" id="IN2-Tt-3ey"/>
+                                    <constraint firstItem="tMN-rr-9LL" firstAttribute="leading" secondItem="wb8-Uo-dvB" secondAttribute="leading" id="VME-5W-xHJ"/>
+                                    <constraint firstItem="vO2-nv-Z6q" firstAttribute="leading" secondItem="wb8-Uo-dvB" secondAttribute="leading" id="az3-CN-XTj"/>
+                                    <constraint firstAttribute="width" constant="20" id="lKd-ln-tHD">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="vO2-nv-Z6q" secondAttribute="bottom" id="rjb-4D-k97"/>
+                                    <constraint firstAttribute="width" secondItem="wb8-Uo-dvB" secondAttribute="height" multiplier="1:1" id="xH3-2o-H3o"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="yKR-Ex-NoP">
+                                <rect key="frame" x="60" y="10" width="351" height="57"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idr-Qa-FH5">
+                                        <rect key="frame" x="0.0" y="0.0" width="351" height="57"/>
+                                        <string key="text">Translation &amp; Tafseer HereTranslation &amp; Tafseer HereTranslation &amp; Tafseer HereTranslation &amp; Tafseer HereTranslation &amp; Tafseer Here</string>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="23"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyu-RT-P8q">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="77"/>
+                                <connections>
+                                    <action selector="selectClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AWC-MK-evd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yKR-Ex-NoP" firstAttribute="top" secondItem="EfL-hk-wd3" secondAttribute="top" constant="10" id="FpH-KR-Q5h"/>
+                            <constraint firstItem="jyu-RT-P8q" firstAttribute="leading" secondItem="EfL-hk-wd3" secondAttribute="leading" id="IFu-Bg-Jcw"/>
+                            <constraint firstItem="yKR-Ex-NoP" firstAttribute="leading" secondItem="jyu-RT-P8q" secondAttribute="trailing" id="JEz-ng-zcD"/>
+                            <constraint firstItem="yKR-Ex-NoP" firstAttribute="leading" secondItem="wb8-Uo-dvB" secondAttribute="trailing" constant="20" id="JOW-GX-SYT">
+                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                            </constraint>
+                            <constraint firstItem="wb8-Uo-dvB" firstAttribute="centerY" secondItem="yKR-Ex-NoP" secondAttribute="centerY" id="ORm-hB-cJw"/>
+                            <constraint firstItem="wb8-Uo-dvB" firstAttribute="leading" secondItem="EfL-hk-wd3" secondAttribute="leading" constant="20" id="SlX-si-gpN">
+                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="yKR-Ex-NoP" secondAttribute="trailing" constant="20" id="eV8-kf-TVd"/>
+                            <constraint firstAttribute="bottom" secondItem="yKR-Ex-NoP" secondAttribute="bottom" constant="10" id="ga2-ex-O3C"/>
+                            <constraint firstItem="jyu-RT-P8q" firstAttribute="top" secondItem="EfL-hk-wd3" secondAttribute="top" id="iqW-7y-Ywc"/>
+                            <constraint firstAttribute="bottom" secondItem="jyu-RT-P8q" secondAttribute="bottom" id="uBw-p7-PL5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="EfL-hk-wd3" secondAttribute="bottom" id="3Rs-nC-YRs"/>
+                    <constraint firstAttribute="trailing" secondItem="EfL-hk-wd3" secondAttribute="trailing" id="LIb-K0-Hja"/>
+                    <constraint firstItem="EfL-hk-wd3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="O0T-1q-fyD"/>
+                    <constraint firstItem="EfL-hk-wd3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lT2-jY-iBe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgSelect" destination="vO2-nv-Z6q" id="oeZ-vg-aQe"/>
+                <outlet property="lblOption" destination="Idr-Qa-FH5" id="2yZ-ZC-fWt"/>
+            </connections>
+            <point key="canvasLocation" x="31.159420289855074" y="161.71875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Ellipse 1" width="16" height="16"/>
+    </resources>
+</document>

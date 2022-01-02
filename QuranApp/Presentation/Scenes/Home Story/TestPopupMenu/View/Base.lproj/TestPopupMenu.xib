@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestPopupMenu" customModule="QuranApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vuContain" destination="x59-zy-Fdz" id="PfU-b9-X7F"/>
+                <outlet property="vuDrag" destination="5hu-oJ-cql" id="dW0-VO-7dU"/>
+                <outlet property="vuDragLine" destination="I7V-91-OUI" id="qE2-29-sGF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLx-26-DYz">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="5QL-ei-Syq" appends="YES" id="Pjh-jx-TIl"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x59-zy-Fdz">
+                    <rect key="frame" x="0.0" y="234" width="320" height="334"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yh0-ld-4wO">
+                            <rect key="frame" x="0.0" y="55" width="320" height="279"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rMa-bD-ezf">
+                                    <rect key="frame" x="10" y="10" width="300" height="224"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CxO-Ca-nsJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfh-Bb-w9Z">
+                                                    <rect key="frame" x="0.0" y="0.0" width="146" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="Qmu-he-AsK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                                    <state key="normal" title="Writing">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="28"/>
+                                                    </variation>
+                                                    <connections>
+                                                        <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="PrY-0e-CEt"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3y-ax-6y9">
+                                                    <rect key="frame" x="154" y="0.0" width="146" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="mS6-5G-0qV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                                                    <state key="normal" title="Clear Wrong Writing">
+                                                        <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="26"/>
+                                                    </variation>
+                                                    <connections>
+                                                        <action selector="clearWrongWriteClicked:" destination="-1" eventType="touchUpInside" id="N7Q-jH-m8b"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqI-Ez-xbG">
+                                            <rect key="frame" x="0.0" y="58" width="300" height="50"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                            <state key="normal" title="Voice">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="28"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="IOT-OE-Bvq"/>
+                                            </connections>
+                                        </button>
+                                        <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afa-lg-2Z4">
+                                            <rect key="frame" x="0.0" y="112" width="300" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                            <state key="normal" title="Understand (Tafseer + words)">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="28"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="KBu-2v-HPf"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7R-Nb-WAP">
+                                            <rect key="frame" x="0.0" y="116" width="300" height="50"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                            <state key="normal" title="Sort">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="28"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="SVh-wU-r0V"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enp-bB-yHm">
+                                            <rect key="frame" x="0.0" y="174" width="300" height="50"/>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                            <state key="normal" title="Complete the Ayat">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="28"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="dhj-kP-1He"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <variation key="heightClass=regular-widthClass=regular" spacing="18"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="rMa-bD-ezf" secondAttribute="trailing" constant="10" id="4yi-Fc-XU7"/>
+                                <constraint firstItem="rMa-bD-ezf" firstAttribute="leading" secondItem="Yh0-ld-4wO" secondAttribute="leading" constant="10" id="BZD-fb-Lx0"/>
+                                <constraint firstItem="rMa-bD-ezf" firstAttribute="top" secondItem="Yh0-ld-4wO" secondAttribute="top" constant="10" id="jfP-2l-5li"/>
+                                <constraint firstAttribute="bottom" secondItem="rMa-bD-ezf" secondAttribute="bottom" constant="45" id="nbt-XS-thb"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hu-oJ-cql">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                            <subviews>
+                                <view userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7V-91-OUI">
+                                    <rect key="frame" x="96" y="26" width="128" height="3"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="3" id="S9c-02-ltn"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Test Type" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1g-z9-12n">
+                                    <rect key="frame" x="10" y="10" width="260" height="35"/>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                                    <color key="textColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="26"/>
+                                    </variation>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knp-dU-Elt">
+                                    <rect key="frame" x="280" y="15" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="knp-dU-Elt" secondAttribute="height" multiplier="1:1" id="BqJ-Ba-ML1"/>
+                                        <constraint firstAttribute="width" constant="25" id="yKg-pl-Cxd">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                        </constraint>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="ic_cancel_24px"/>
+                                    <connections>
+                                        <action selector="tapClicked:" destination="-1" eventType="touchUpInside" id="EBw-J8-KhB"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvG-el-hrA">
+                                    <rect key="frame" x="0.0" y="54.5" width="320" height="0.5"/>
+                                    <color key="backgroundColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="0.5" id="D6q-tI-Rst"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="XvG-el-hrA" secondAttribute="bottom" id="06h-bi-cHx"/>
+                                <constraint firstItem="I7V-91-OUI" firstAttribute="centerX" secondItem="5hu-oJ-cql" secondAttribute="centerX" id="1KK-Iv-xIl"/>
+                                <constraint firstItem="knp-dU-Elt" firstAttribute="leading" secondItem="n1g-z9-12n" secondAttribute="trailing" constant="10" id="6vS-Sl-Xoj"/>
+                                <constraint firstItem="knp-dU-Elt" firstAttribute="centerY" secondItem="5hu-oJ-cql" secondAttribute="centerY" id="BR7-rR-H0G"/>
+                                <constraint firstAttribute="height" constant="55" id="Ers-Hx-FUU">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                </constraint>
+                                <constraint firstItem="n1g-z9-12n" firstAttribute="leading" secondItem="5hu-oJ-cql" secondAttribute="leading" constant="10" id="LOq-IS-DDN"/>
+                                <constraint firstItem="n1g-z9-12n" firstAttribute="top" secondItem="5hu-oJ-cql" secondAttribute="top" constant="10" id="fm4-2D-tvZ"/>
+                                <constraint firstAttribute="bottom" secondItem="n1g-z9-12n" secondAttribute="bottom" constant="10" id="g5j-PB-pI0"/>
+                                <constraint firstAttribute="trailing" secondItem="XvG-el-hrA" secondAttribute="trailing" id="lyi-gL-ofg"/>
+                                <constraint firstAttribute="trailing" secondItem="knp-dU-Elt" secondAttribute="trailing" constant="15" id="nzj-rx-PRe"/>
+                                <constraint firstItem="XvG-el-hrA" firstAttribute="leading" secondItem="5hu-oJ-cql" secondAttribute="leading" id="qhs-a0-t1j"/>
+                                <constraint firstItem="I7V-91-OUI" firstAttribute="centerY" secondItem="5hu-oJ-cql" secondAttribute="centerY" id="qlQ-nF-oZc"/>
+                                <constraint firstItem="I7V-91-OUI" firstAttribute="width" secondItem="5hu-oJ-cql" secondAttribute="width" multiplier="0.4" id="x8Y-MX-vkm"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="5QL-ei-Syq" appends="YES" id="gZf-BO-wLA"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="5hu-oJ-cql" firstAttribute="leading" secondItem="x59-zy-Fdz" secondAttribute="leading" id="0KQ-Cj-Mfk"/>
+                        <constraint firstItem="5hu-oJ-cql" firstAttribute="top" secondItem="x59-zy-Fdz" secondAttribute="top" id="NAA-nK-kAo"/>
+                        <constraint firstAttribute="bottom" secondItem="Yh0-ld-4wO" secondAttribute="bottom" id="OVc-pJ-710"/>
+                        <constraint firstItem="Yh0-ld-4wO" firstAttribute="leading" secondItem="x59-zy-Fdz" secondAttribute="leading" id="VbS-BC-Y99"/>
+                        <constraint firstItem="Yh0-ld-4wO" firstAttribute="top" secondItem="5hu-oJ-cql" secondAttribute="bottom" id="ljU-KJ-SUR"/>
+                        <constraint firstAttribute="trailing" secondItem="5hu-oJ-cql" secondAttribute="trailing" id="tH1-D4-cKc"/>
+                        <constraint firstAttribute="trailing" secondItem="Yh0-ld-4wO" secondAttribute="trailing" id="uXI-g8-72F"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="x59-zy-Fdz" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="GOv-TF-k1q"/>
+                <constraint firstAttribute="bottom" secondItem="lLx-26-DYz" secondAttribute="bottom" id="TzS-96-Tda"/>
+                <constraint firstAttribute="trailing" secondItem="lLx-26-DYz" secondAttribute="trailing" id="juv-dp-s3t"/>
+                <constraint firstItem="x59-zy-Fdz" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="khU-aW-y5T"/>
+                <constraint firstItem="x59-zy-Fdz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mds-Qi-NLd"/>
+                <constraint firstItem="lLx-26-DYz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="r1M-jC-9iC"/>
+                <constraint firstItem="lLx-26-DYz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="udy-Fn-JKb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="Ifq-3u-dsi" appends="YES" id="ZvD-CU-6yl"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="110.05434782608697"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="Ifq-3u-dsi">
+            <connections>
+                <action selector="dragView:" destination="-1" id="CQR-pY-JAb"/>
+                <outlet property="delegate" destination="-1" id="ui5-mk-XLC"/>
+            </connections>
+        </panGestureRecognizer>
+        <tapGestureRecognizer id="5QL-ei-Syq">
+            <connections>
+                <action selector="tapClicked:" destination="-1" id="hNk-mo-Odv"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="ic_cancel_24px" width="20" height="20"/>
+    </resources>
+</document>

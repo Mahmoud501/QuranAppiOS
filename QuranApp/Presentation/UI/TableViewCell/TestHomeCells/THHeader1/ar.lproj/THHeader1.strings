@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Ayat Need to Review"; ObjectID = "rIL-i3-mxO"; */
+"rIL-i3-mxO.text" = "الايات التي تحتاج الى مراجعه";
+
+/* Class = "UILabel"; text = "Result of Test save here for you to track your memorized Surah and date of finish too, Success Rate is : 70 %"; ObjectID = "tb4-WW-45n"; */
+"tb4-WW-45n.text" = "نتيجه حفطك من القران من اجل تتبع حفظك للصور بالتواريخ ايضا ملحوظه نسبه النجاح ٧٠٪";
+
+/* Class = "UILabel"; text = "Archive"; ObjectID = "xTS-Mj-Lb7"; */
+"xTS-Mj-Lb7.text" = "الارشيف";

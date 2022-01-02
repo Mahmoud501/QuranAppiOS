@@ -1,0 +1,58 @@
+
+/* Class = "UIButton"; normalTitle = "Check Answer"; ObjectID = "4h4-Qi-sUp"; */
+"4h4-Qi-sUp.normalTitle" = "تصحيح";
+
+/* Class = "UILabel"; text = "="; ObjectID = "5TP-pr-xRM"; */
+"5TP-pr-xRM.text" = "=";
+
+/* Class = "UIButton"; normalTitle = "Check Answer"; ObjectID = "6Xf-yU-gRD"; */
+"6Xf-yU-gRD.normalTitle" = "تصحيح";
+
+"T5S-Nk-IH4.normalTitle" = "إظهار فى الرئيسية";
+
+"seG-xl-pCi.normalTitle" = "تم";
+
+/* Class = "UILabel"; text = "اختبار الفهم"; ObjectID = "7ph-mw-5XH"; */
+"7ph-mw-5XH.text" = "اختبار الفهم";
+
+/* Class = "UILabel"; text = "اختبار الصوت"; ObjectID = "8ZT-R3-GNs"; */
+"8ZT-R3-GNs.text" = "اختبار الصوت";
+
+/* Class = "UILabel"; text = "هذا نسبة حفظك من القران الكريم يمكنك انشاء اختبارات اكتر لزيادة النسبة"; ObjectID = "ATS-Jq-61a"; */
+"ATS-Jq-61a.text" = "هذا نسبة حفظك من آيات القرآن الكريم اعانك الله على طاعته";
+
+/* Class = "UIButton"; normalTitle = "مشاركة صوتك"; ObjectID = "Aoj-WC-mDq"; */
+"Aoj-WC-mDq.normalTitle" = "مشاركة صوتك";
+
+/* Class = "UILabel"; text = "القران"; ObjectID = "CDp-GI-DKk"; */
+"CDp-GI-DKk.text" = "القران";
+
+/* Class = "UILabel"; text = "اختبار الترتيب"; ObjectID = "KGP-UN-Bqa"; */
+"KGP-UN-Bqa.text" = "اختبار الترتيب";
+
+/* Class = "UILabel"; text = "الاختبارات والنتائج"; ObjectID = "KYs-sY-SwW"; */
+"KYs-sY-SwW.text" = "الحفظ";
+
+/* Class = "UILabel"; text = "+"; ObjectID = "bqz-o6-il1"; */
+"bqz-o6-il1.text" = ":";
+
+/* Class = "UILabel"; text = "100%"; ObjectID = "eAl-gc-g5N"; */
+"eAl-gc-g5N.text" = "100%";
+
+/* Class = "UILabel"; text = "١- شير صوتك الخاص لتتأكد من حفظك بطريقة صحيحة\n\n٢- يمكنك عمل مشاركة على السوشيال ميديا ونشر القران بصوتك الخاص\n\n٣- يمكنك مشاركة على كل وسائل التواصل الاجتماع"; ObjectID = "eXt-ne-Aje"; */
+"eXt-ne-Aje.text" = " ";
+
+/* Class = "UILabel"; text = "بسم الله الرحمن الرحيم"; ObjectID = "jcv-42-yAr"; */
+"jcv-42-yAr.text" = "بسم الله الرحمن الرحيم";
+
+/* Class = "UIButton"; normalTitle = "Check Answer"; ObjectID = "kjb-QK-GXG"; */
+"kjb-QK-GXG.normalTitle" = "تصحيح";
+
+/* Class = "UILabel"; text = "Aya Num: 1"; ObjectID = "mSJ-Wa-VjY"; */
+"mSJ-Wa-VjY.text" = "Aya Num: 1";
+
+/* Class = "UILabel"; text = "اختبار الكتابة"; ObjectID = "vDB-x2-7Qr"; */
+"vDB-x2-7Qr.text" = "اختبار الكتابة والفواصل بين كل أية واخري هي @";
+
+/* Class = "UILabel"; text = "اختبار أكمل"; ObjectID = "zFy-KQ-rIj"; */
+"zFy-KQ-rIj.text" = "اختبار أكمل";

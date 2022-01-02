@@ -1,0 +1,20 @@
+
+/* Class = "UIButton"; normalTitle = "Understand (Tafseer + words)"; ObjectID = "Afa-lg-2Z4"; */
+"Afa-lg-2Z4.normalTitle" = "اختبار الفهم";
+
+/* Class = "UIButton"; normalTitle = "Voice"; ObjectID = "AqI-Ez-xbG"; */
+"AqI-Ez-xbG.normalTitle" = "اختبار الصوت";
+
+/* Class = "UIButton"; normalTitle = "Complete the Ayat"; ObjectID = "Enp-bB-yHm"; */
+"Enp-bB-yHm.normalTitle" = "اختبار اكمل الايات";
+
+/* Class = "UIButton"; normalTitle = "Writing"; ObjectID = "Mfh-Bb-w9Z"; */
+"Mfh-Bb-w9Z.normalTitle" = "اختبار الكتابة";
+
+/* Class = "UIButton"; normalTitle = "Sort"; ObjectID = "V7R-Nb-WAP"; */
+"V7R-Nb-WAP.normalTitle" = "اختبار ترتيب الايات";
+
+"M3y-ax-6y9.normalTitle" = "مسح الاخطاء الكتابية";
+
+/* Class = "UILabel"; text = "Select Test Type"; ObjectID = "n1g-z9-12n"; */
+"n1g-z9-12n.text" = "اختر نوع الاختبار الذي تريده";

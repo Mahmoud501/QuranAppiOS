@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="133" id="I8Z-fB-oT0" customClass="AboutCell2" customModule="قرآننا" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I8Z-fB-oT0" id="fkY-DB-V4Z">
+                <rect key="frame" x="0.0" y="0.0" width="442" height="133"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khn-UP-Odj">
+                        <rect key="frame" x="20" y="10" width="402" height="113"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoPath" translatesAutoresizingMaskIntoConstraints="NO" id="ybH-kn-j3p">
+                                <rect key="frame" x="10" y="10" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Jpd-CC-2iR">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="130"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" secondItem="ybH-kn-j3p" secondAttribute="height" multiplier="1:1" id="b6Z-6V-tfP"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="nTJ-4Z-eh3">
+                                <rect key="frame" x="110" y="10" width="282" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Manger" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4X-Lb-63z">
+                                        <rect key="frame" x="0.0" y="0.0" width="282" height="43.5"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="24"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Mahmoud Ahmed Zaki" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BQ-n8-UO3">
+                                        <rect key="frame" x="0.0" y="43.5" width="282" height="36.5"/>
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="22"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nTJ-4Z-eh3" secondAttribute="trailing" constant="10" id="2MH-WO-6mk"/>
+                            <constraint firstItem="ybH-kn-j3p" firstAttribute="top" secondItem="khn-UP-Odj" secondAttribute="top" constant="10" id="3CK-Tf-avN"/>
+                            <constraint firstItem="nTJ-4Z-eh3" firstAttribute="leading" secondItem="ybH-kn-j3p" secondAttribute="trailing" constant="20" id="5Ly-c4-zXy"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nTJ-4Z-eh3" secondAttribute="bottom" constant="10" id="QfT-bD-Bed"/>
+                            <constraint firstItem="nTJ-4Z-eh3" firstAttribute="centerY" secondItem="ybH-kn-j3p" secondAttribute="centerY" id="YBx-Us-feP"/>
+                            <constraint firstItem="nTJ-4Z-eh3" firstAttribute="top" secondItem="khn-UP-Odj" secondAttribute="top" constant="10" id="ngk-eN-mQr"/>
+                            <constraint firstItem="ybH-kn-j3p" firstAttribute="leading" secondItem="khn-UP-Odj" secondAttribute="leading" constant="10" id="olv-50-D2s"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="khn-UP-Odj" firstAttribute="leading" secondItem="fkY-DB-V4Z" secondAttribute="leading" constant="20" id="Ou3-W2-MWp"/>
+                    <constraint firstAttribute="bottom" secondItem="khn-UP-Odj" secondAttribute="bottom" constant="10" id="Sfv-er-dXb"/>
+                    <constraint firstAttribute="trailing" secondItem="khn-UP-Odj" secondAttribute="trailing" constant="20" id="fJx-j6-NwH"/>
+                    <constraint firstItem="khn-UP-Odj" firstAttribute="top" secondItem="fkY-DB-V4Z" secondAttribute="top" constant="10" id="kzg-cs-5jb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="wpw-9M-hO4"/>
+            <connections>
+                <outlet property="Img" destination="ybH-kn-j3p" id="vqJ-fr-PNj"/>
+                <outlet property="lblName" destination="9BQ-n8-UO3" id="epa-aV-aIG"/>
+                <outlet property="lblPostion" destination="Z4X-Lb-63z" id="tV0-al-dVx"/>
+                <outlet property="vuContain" destination="khn-UP-Odj" id="bod-ar-gFq"/>
+            </connections>
+            <point key="canvasLocation" x="37.681159420289859" y="284.26339285714283"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="NoPath" width="80" height="80"/>
+    </resources>
+</document>

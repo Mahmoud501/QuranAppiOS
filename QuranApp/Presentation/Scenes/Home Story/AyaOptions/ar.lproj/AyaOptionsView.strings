@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Clear"; ObjectID = "BjY-Aa-eO9"; */
+"BjY-Aa-eO9.text" = "حفظ";
+
+/* Class = "UILabel"; text = "Color"; ObjectID = "L39-uD-bWU"; */
+"L39-uD-bWU.text" = "تلوين";
+
+/* Class = "UILabel"; text = "Tafseer"; ObjectID = "eED-ij-toY"; */
+"eED-ij-toY.text" = "تفسير";
+
+/* Class = "UILabel"; text = "Play"; ObjectID = "f3e-bp-Wp3"; */
+"f3e-bp-Wp3.text" = "تشغيل";
+
+/* Class = "UILabel"; text = "Test"; ObjectID = "xdu-Ds-XGN"; */
+"xdu-Ds-XGN.text" = "اختبار";
