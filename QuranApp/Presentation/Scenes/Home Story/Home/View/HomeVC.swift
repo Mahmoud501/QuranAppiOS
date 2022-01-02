@@ -13,6 +13,10 @@ import AVFoundation
 import Speech
 import ZVProgressHUD
 
+import AppCenterCrashes
+import AppCenter
+
+
 class HomeVC: BaseViewController{
     
     var isFirst = true // first Lanuach
@@ -164,7 +168,9 @@ extension HomeVC {
         } else {
             // Fallback on earlier versions
         }
-        
+        AppCenter.start(withAppSecret: "84112553-2a2f-4ce9-8b2d-5f43c921eb73", services:[
+          Crashes.self
+        ])
         AppFactory.homeVC = self
         presenter = HomePresenter()
         searchVC = SearchTextVC.createVC()

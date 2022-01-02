@@ -24,4 +24,6 @@ target 'QuranApp' do
   pod 'AHDownloadButton'
   pod "DownloadButton"
   pod 'StepSlider', '~> 1.3.0'
+  pod 'AppCenter'
+  
 end

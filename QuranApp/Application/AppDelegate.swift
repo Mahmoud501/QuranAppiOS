@@ -11,6 +11,9 @@ import CoreData
 import IQKeyboardManagerSwift
 import ZVProgressHUD
 import AVFoundation
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,9 +30,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         changeTabbarFont()
         setupProgressHud()
         startScreen()
+        setupUICodePush()
         return true
     }
     
+    
+    func setupUICodePush() {
+        AppCenter.start(withAppSecret: "84112553-2a2f-4ce9-8b2d-5f43c921eb73", services:[
+          Analytics.self,
+          Crashes.self
+        ])
+    }
     
       func startScreen() {
 
