@@ -61,26 +61,29 @@ class HomeSliderPresenter {
         self.surhas = surhaRepo?.getAll()?.sorted(by: { (s1, s2) -> Bool in
             return (Int(s1.id ?? "0") ?? 0) < (Int(s2.id ?? "0") ?? 0)
         })
-        let reciter = currentReciter!
-        for i in 0 ..< (surhas?.count ?? 0) {
-            let isDownload = self.isSurhaDownloaded(reciter: reciter, surha: surhas![i])
-            self.isDownloaded[i].isDownloaded = isDownload
+        if let reciter = currentReciter {
+            for i in 0 ..< (surhas?.count ?? 0) {
+                let isDownload = self.isSurhaDownloaded(reciter: reciter, surha: surhas![i])
+                self.isDownloaded[i].isDownloaded = isDownload
+            }
+            finish()
         }
-        finish()
     }
     
     func refresh(finish: @escaping ()->()) {
-        let reciter = currentReciter!
-        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-            guard let self = self else { return }
-            for i in 0 ..< (self.surhas?.count ?? 0) {
-                let isDownload = self.isSurhaDownloaded(reciter: reciter, surha: self.surhas![i])
-                self.isDownloaded[i].isDownloaded = isDownload
-            }
-            DispatchQueue.main.async {
-                finish()
+        if let reciter = currentReciter {
+            DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+                guard let self = self else { return }
+                for i in 0 ..< (self.surhas?.count ?? 0) {
+                    let isDownload = self.isSurhaDownloaded(reciter: reciter, surha: self.surhas![i])
+                    self.isDownloaded[i].isDownloaded = isDownload
+                }
+                DispatchQueue.main.async {
+                    finish()
+                }
             }
         }
+       
     }
     
     func isSurhaDownloaded(reciter: CReciter,surha: CSurha) -> Bool {
@@ -89,22 +92,24 @@ class HomeSliderPresenter {
     
     func downloadSurha(surha: CSurha, for index: Int, reload: @escaping(Int)-> ()) {
         let id = (Int(surha.id!)!) - 1
-        reciterManager.downloadAyat(indentifer: "StopDown_\(surha.id ?? "")",reciter: AppFactory.currentReciter!, ayat: surha.ayat?.array as! [CAyatModel], process: { [weak self] (current, total) in
-            guard let self = self else { return }
-            self.isDownloaded[id].current = current
-            self.isDownloaded[id].total = total
-            if current < total {
-                self.isDownloaded[id].status = 2
-            }else {
+        if let reciter = AppFactory.currentReciter {
+            reciterManager.downloadAyat(indentifer: "StopDown_\(surha.id ?? "")",reciter: reciter, ayat: surha.ayat?.array as! [CAyatModel], process: { [weak self] (current, total) in
+                guard let self = self else { return }
+                self.isDownloaded[id].current = current
+                self.isDownloaded[id].total = total
+                if current < total {
+                    self.isDownloaded[id].status = 2
+                }else {
+                    self.isDownloaded[id].status = 0
+                    self.isDownloaded[id].isDownloaded = true
+                }
+                reload(index)
+            }) {[weak self] (error) in
+                guard let self = self else { return }
                 self.isDownloaded[id].status = 0
-                self.isDownloaded[id].isDownloaded = true
+                self.isDownloaded[id].isDownloaded = false
+                reload(index)
             }
-            reload(index)
-        }) {[weak self] (error) in
-            guard let self = self else { return }
-            self.isDownloaded[id].status = 0
-            self.isDownloaded[id].isDownloaded = false
-            reload(index)
         }
     }
     

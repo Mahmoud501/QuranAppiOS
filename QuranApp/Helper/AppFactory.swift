@@ -11,6 +11,7 @@ import UIKit
 
 class AppFactory {
     
+    static let version = 1.5
     
     static var lang: String? {
         get { (UserDefaults.standard.object(forKey: "loclz") as? String) }
@@ -29,16 +30,18 @@ class AppFactory {
     static var currentReciter: CReciter? {
         
         get {
-            
             let repo = CoreDataRepository<CSetting>.init()
             let setting = repo.getAll()?.first
             let current_reciter_id = setting?.current_reciter ?? "0"
             let type = setting?.reciter_type ?? 0
             let repoReciter = CoreDataRepository<CReciter>.init()
-            return repoReciter.query(with: "id == \(current_reciter_id) && type == \(type)")?.first
+            let reciter = repoReciter.query(with: "id == \(current_reciter_id) && type == \(type)")?.first
+            return reciter
         }
         
     }
+
+    
     
     
     static var currentTafseer: CTafseerModel? {

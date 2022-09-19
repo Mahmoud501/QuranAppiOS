@@ -19,4 +19,20 @@ extension UIView {
         self.addSubview(blurEffectView)
     }
     
+    func fadeIn(finished: Bool) {
+        UIView.animate(withDuration: 1, delay: 0,
+                       options: [.curveEaseInOut],
+                       animations: { self.alpha = 1 }, completion: {_ in
+            self.fadeOut(finished: finished)
+        })
+    }
+
+    func fadeOut(finished: Bool) {
+        UIView.animate(withDuration: 1, delay: 0,
+                       options: [.curveEaseInOut],
+                       animations: {
+            self.alpha = 0.2
+        }, completion: self.fadeIn)
+    }
+    
 }

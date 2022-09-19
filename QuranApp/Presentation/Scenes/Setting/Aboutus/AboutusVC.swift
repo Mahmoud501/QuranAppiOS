@@ -22,7 +22,7 @@ extension AboutusVC {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if presenter?.aboutus == nil {
-            ProgressHUD.shared.show()
+            ZVProgressHUD.show()
             presenter?.getAbout()
         }
     }

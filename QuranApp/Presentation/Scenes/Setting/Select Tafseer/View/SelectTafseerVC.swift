@@ -43,7 +43,7 @@ class SelectTafseerVC: BaseViewController {
         let name = (AppFactory.isArabic == true ? tafseer?.name_ar : tafseer?.name_en) ?? ""
         let alertDownload = UIAlertController.init(title: name, message: "do you want to download tafseer?".localized, preferredStyle: UIAlertController.Style.alert)
         let action1 = UIAlertAction.init(title: "Download".localized, style: UIAlertAction.Style.default) { (alert) in
-            ProgressHUD.shared.show()
+            ZVProgressHUD.show()
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {
                self.presenter?.downloadTafseer(tafseer: tafseer)
             })

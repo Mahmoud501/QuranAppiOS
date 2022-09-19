@@ -30,6 +30,12 @@ extension HomeVC {
             guard let self = self else { return }
             self.TVAyat.reloadData()
         }
+        self.vuOptions.scrollToAyah = { [weak self] scrollAyah in
+            guard let self = self else { return }
+            self.scrollToAyah(ayah: scrollAyah, animation: true)
+
+        }
+        
     }
     
     func scrollToAyah (ayah: CAyatModel?, animation: Bool? = nil, finish: ((IndexPath)->())? = nil) {

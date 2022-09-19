@@ -13,7 +13,9 @@ extension HomeVC {
     
     func didChangeTafseer() {
         presenter?.getHome { [weak self] in
-            self?.TVAyat.reloadData()
+            if self?.TVAyat != nil {
+                self?.TVAyat.reloadData()
+            }
         }
     }
         

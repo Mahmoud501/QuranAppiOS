@@ -11,43 +11,38 @@ import CoreData
 import IQKeyboardManagerSwift
 import ZVProgressHUD
 import AVFoundation
-import AppCenter
-import AppCenterAnalytics
-import AppCenterCrashes
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var player: AVAudioPlayer?
+    let gcmMessageIDKey = "gcm.message_id"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        print(persistentContainer.persistentStoreCoordinator.persistentStores.first?.url);
         // Override point for customization after application launch.T
         UIApplication.currentLang = "ar"
-        
-
         BundleLocalization.sharedInstance()?.language = UIApplication.currentLang
         IQKeyboardManager.shared.enable = true
+        self.configFireBase(application: application)
         changeTabbarFont()
         setupProgressHud()
         startScreen()
-        setupUICodePush()
+        UIApplication.shared.applicationIconBadgeNumber = 0
+        let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+         print(urls[urls.count-1] as URL)
+
         return true
     }
     
-    
-    func setupUICodePush() {
-        AppCenter.start(withAppSecret: "84112553-2a2f-4ce9-8b2d-5f43c921eb73", services:[
-          Analytics.self,
-          Crashes.self
-        ])
-    }
     
       func startScreen() {
 
           if #available(iOS 13.0, *) {
 
           }else{
-              window =  UIWindow(frame: UIScreen.main.bounds)
+              window =  UIWindow(frame: UIScreen.main.bounds)              
               window?.makeKeyAndVisible()
               if let window = self.window {
                   AppDelegate.GoScreen(window)
@@ -73,7 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let vc = SplachVC.createVC()
             window.rootViewController = vc
         }
-        
+        window.makeKeyAndVisible()
     }
     
     private func clearDatabase() {
@@ -90,12 +85,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupProgressHud() {
-        ProgressHUD.shared.maskType = .black
-        ProgressHUD.shared.displayStyle = .dark
-        ProgressHUD.shared.animationType = .native
+        ZVProgressHUD.setMaskType(.black)
+        ZVProgressHUD.setDisplayStyle(.dark)
+        ZVProgressHUD.setAnimationType(.native)
     }
     
     func changeTabbarFont() {
+        
+        if #available(iOS 13.0, *) {
+            let tabBarAppearance: UITabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithDefaultBackground()
+            tabBarAppearance.backgroundColor = UIColor.init(red: 249/256, green: 249/256, blue: 249/256, alpha: 1)
+            UITabBar.appearance().standardAppearance = tabBarAppearance
+            if #available(iOS 15.0, *) {
+                UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+            }
+        } else {
+            // Fallback on earlier versions
+        }        
         let appearance = UITabBarItem.appearance()
              var attributes = [NSAttributedString.Key : Any]()
              if UIDevice.current.userInterfaceIdiom == .pad {
@@ -103,7 +110,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
              }else {
                 attributes = [NSAttributedString.Key.font: UIFont(name: "Cairo-Regular", size: 10)!]
              }
-             appearance.setTitleTextAttributes(attributes as [NSAttributedString.Key : Any], for: .normal)
+        appearance.setTitleTextAttributes(attributes as [NSAttributedString.Key : Any], for: .normal)
+
+
     }
    
 

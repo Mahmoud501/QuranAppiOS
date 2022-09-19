@@ -31,7 +31,7 @@ class AboutCell2: UITableViewCell {
     
     var teamMember: TeamMemberModel? {
         didSet {
-            let path = "http://quranapp.info/storage/app/public/" + (teamMember?.photo ?? "")
+            let path = "https://quranapp.info/storage/app/public/" + (teamMember?.photo ?? "")
             let url = URL.init(string: path)
             self.Img.kf.setImage(with: url)
             self.Img.kf.indicatorType = .activity

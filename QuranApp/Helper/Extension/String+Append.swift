@@ -10,4 +10,10 @@ import Foundation
 
 extension String {
     
+    var encodeValue: String? {
+        var dataenc = self.data(using: String.Encoding.nonLossyASCII)
+        var encodevalue = String(data: dataenc!, encoding: String.Encoding.utf8)
+        return encodevalue
+    }
+    
 }

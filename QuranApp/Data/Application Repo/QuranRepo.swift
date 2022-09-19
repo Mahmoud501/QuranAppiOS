@@ -29,6 +29,7 @@ class QuranRepo {
             let repo = CoreDataRepository<CAyatModel>.init()
             let ayah = CAyatModel.init(context: repo.context!)
             ayah.id = (i + 1).description
+            ayah.idInt = Int16(i + 1)            
             ayah.desc = ayatText?[i].description
             ayah.simple_desc = ayatCleanText?[i].description
             ayatData.append(ayah)
@@ -45,7 +46,7 @@ class QuranRepo {
         for item in pages {
             for i in item.start ... ((item.number_ayat + item.start ) - 1) {
                 let ayah = ayat[Int(i) - 1]
-                ayah.page = item
+                ayah.page = item                
                 item.addToAyat(ayah)
             }
             
@@ -73,9 +74,18 @@ class QuranRepo {
                 item.addToAyat(ayah)
             }
         }
+        
+        for item in ayat {
+            item.juzhNumer = item.juzh!.idInt
+            item.surhaNumber = item.surha!.idInt
+            item.pageNumber = item.page!.idInt
+            print(item.simple_desc , " " ,item.juzh!.idInt, " " , item.surha!.idInt, " " , item.page!.idInt)
+        }
+        
         CoreDataRepository.save()
         finish?()
     }
+    
     
     func installQuran(finish: (()->())? = nil, process: ((Double,String)->())? = nil) {
         

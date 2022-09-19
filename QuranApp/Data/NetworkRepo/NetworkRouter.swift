@@ -10,7 +10,7 @@ import Foundation
 
 class NetworkRouter {
     
-    static let base = "http://quranapp.info/api/"
+    static let base = "https://quranapp.info/api/"
     static let register = "\(base)user/create"
     static let about = "\(base)about-us"
     static let setting = "\(base)app-settings"

@@ -29,11 +29,12 @@ class PageManger {
         let content = fileManager.readFile(fileName: "page-file", fileType: "txt")
         let pageAyatNumbers = content?.split(separator: "\r\n")
         var index = 1
-        let repo = CoreDataRepository<CPage>.init()
+        let repo = CoreDataRepository<CPage>.init()        
         for item in pageAyatNumbers ?? [] {
             if let ayatNum = Int32(item.description) {
                 let p1 = CPage.init(context: repo.context!)
                 p1.id = index.description
+                p1.idInt = Int16(index)
                 p1.number_ayat = ayatNum
                 p1.name_en = "Page Number " + index.description
                 p1.name_ar = "الصفحة رقم " + index.description.replacedArabicDigitsWithEnglish

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hv9-4X-6XR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hv9-4X-6XR">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -28,7 +28,7 @@
         <!--SplachVC-->
         <scene sceneID="LV4-4a-tB6">
             <objects>
-                <viewController storyboardIdentifier="SplachVC" id="4Ul-yO-uzq" customClass="SplachVC" customModule="قرآننا" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplachVC" id="4Ul-yO-uzq" customClass="SplachVC" customModule="QuranApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BnF-Xt-Qqj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,8 +36,17 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="ekV-QM-NXf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait and let app on screen until finish" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlI-hs-C52">
+                                <rect key="frame" x="10" y="466.5" width="355" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="29"/>
+                                </variation>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="eiQ-xU-Tai">
-                                <rect key="frame" x="7" y="217" width="361" height="233.5"/>
+                                <rect key="frame" x="7" y="211" width="361" height="245.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 2" translatesAutoresizingMaskIntoConstraints="NO" id="Vb9-59-5tc">
                                         <rect key="frame" x="87" y="0.0" width="187.5" height="187.5"/>
@@ -54,7 +63,7 @@
                                         <color key="trackTintColor" red="0.57254901960000004" green="0.83529411760000005" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quran loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxq-oA-QGO">
-                                        <rect key="frame" x="0.0" y="213.5" width="361" height="20"/>
+                                        <rect key="frame" x="0.0" y="213.5" width="361" height="32"/>
                                         <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.46666666670000001" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -76,7 +85,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eiQ-xU-Tai" firstAttribute="centerY" secondItem="BnF-Xt-Qqj" secondAttribute="centerY" id="142-xo-pg2"/>
+                            <constraint firstItem="TL6-JD-fUR" firstAttribute="trailing" secondItem="WlI-hs-C52" secondAttribute="trailing" constant="10" id="5cp-yU-EtK"/>
                             <constraint firstAttribute="bottom" secondItem="ekV-QM-NXf" secondAttribute="bottom" id="8iL-uO-iSH"/>
+                            <constraint firstItem="WlI-hs-C52" firstAttribute="centerX" secondItem="eiQ-xU-Tai" secondAttribute="centerX" id="CU7-uF-iZj"/>
+                            <constraint firstItem="WlI-hs-C52" firstAttribute="top" secondItem="bxq-oA-QGO" secondAttribute="bottom" constant="10" id="MfG-UY-ZXN">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="ekV-QM-NXf" secondAttribute="trailing" id="Qyr-mk-ufp"/>
                             <constraint firstItem="ekV-QM-NXf" firstAttribute="leading" secondItem="BnF-Xt-Qqj" secondAttribute="leading" id="XpT-rv-QvW"/>
                             <constraint firstItem="ekV-QM-NXf" firstAttribute="top" secondItem="BnF-Xt-Qqj" secondAttribute="top" id="YAM-xo-3xk"/>
@@ -84,6 +98,7 @@
                                 <variation key="heightClass=regular-widthClass=regular" constant="-100"/>
                             </constraint>
                             <constraint firstItem="eiQ-xU-Tai" firstAttribute="centerX" secondItem="BnF-Xt-Qqj" secondAttribute="centerX" id="tUL-m2-nCq"/>
+                            <constraint firstItem="WlI-hs-C52" firstAttribute="leading" secondItem="TL6-JD-fUR" secondAttribute="leading" constant="10" id="zSt-pM-JOR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -99,7 +114,7 @@
         <!--Test-->
         <scene sceneID="eUH-Bg-VWU">
             <objects>
-                <viewController storyboardIdentifier="test" id="Hv9-4X-6XR" customClass="test" customModule="قرآننا" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="test" id="Hv9-4X-6XR" customClass="test" customModule="QuranApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Nu-GZ-idO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,7 +129,7 @@
         <!--SliderVC-->
         <scene sceneID="300-W9-i10">
             <objects>
-                <viewController storyboardIdentifier="SliderVC" id="dsk-FP-hUu" customClass="SliderVC" customModule="قرآننا" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SliderVC" id="dsk-FP-hUu" customClass="SliderVC" customModule="QuranApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H4i-ul-fcB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,7 +144,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="quj-8Y-mCI" customClass="SplachCell" customModule="قرآننا" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="quj-8Y-mCI" customClass="SplachCell" customModule="QuranApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="-107.5" width="414" height="682"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WBp-pM-2EL">
@@ -140,7 +155,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="341"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3gC-Vx-Tm3">
-                                                    <rect key="frame" x="20" y="355" width="380" height="33"/>
+                                                    <rect key="frame" x="20" y="355" width="380" height="52.5"/>
                                                     <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="28"/>
                                                     <color key="textColor" red="0.0" green="0.46666666670000001" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -149,7 +164,7 @@
                                                     </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BwP-Sk-hAb">
-                                                    <rect key="frame" x="20" y="396" width="380" height="17.5"/>
+                                                    <rect key="frame" x="20" y="415.5" width="380" height="28.5"/>
                                                     <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
                                                     <color key="textColor" red="0.31562811140000002" green="0.70606029029999995" blue="0.72181838750000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -196,7 +211,7 @@
                                 </connections>
                             </collectionView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="3Eh-XB-Fsx">
-                                <rect key="frame" x="126.5" y="0.0" width="122.5" height="27.5"/>
+                                <rect key="frame" x="130" y="0.0" width="115.5" height="26"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAT-eS-L8R">
                                 <rect key="frame" x="219" y="592" width="131" height="60"/>
@@ -257,7 +272,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quran App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbv-6c-dgv">
-                                <rect key="frame" x="80" y="35" width="126.5" height="30.5"/>
+                                <rect key="frame" x="80" y="28" width="124" height="44"/>
                                 <fontDescription key="fontDescription" name="KFGQPCUthmanTahaNaskh" family="KFGQPC Uthman Taha Naskh" pointSize="26"/>
                                 <color key="textColor" red="0.0" green="0.46666666670000001" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -266,7 +281,7 @@
                                 </variation>
                             </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hAF-9r-1yS">
-                                <rect key="frame" x="227.5" y="36.5" width="122.5" height="27.5"/>
+                                <rect key="frame" x="234.5" y="37" width="115.5" height="26"/>
                                 <color key="pageIndicatorTintColor" red="0.57254901960000004" green="0.83529411760000005" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.0" green="0.46666666670000001" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
@@ -315,7 +330,7 @@
         <!--OptionVC-->
         <scene sceneID="yu4-Gw-CH9">
             <objects>
-                <viewController storyboardIdentifier="OptionVC" id="hPa-fJ-N9x" customClass="OptionVC" customModule="قرآننا" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OptionVC" id="hPa-fJ-N9x" customClass="OptionVC" customModule="QuranApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7bR-b2-Uu2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -324,10 +339,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5de-Eh-lET">
-                                        <rect key="frame" x="20" y="20" width="335" height="764.5"/>
+                                        <rect key="frame" x="20" y="20" width="335" height="828.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quran App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdA-qg-kNJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="335" height="26"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="41.5"/>
                                                 <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -336,7 +351,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uv7-vD-Flv">
-                                                <rect key="frame" x="0.0" y="42" width="335" height="0.5"/>
+                                                <rect key="frame" x="0.0" y="57.5" width="335" height="0.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="0.5" id="q6e-BK-YVS"/>
@@ -346,10 +361,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="oim-MJ-sIa">
-                                                <rect key="frame" x="0.0" y="58.5" width="335" height="62"/>
+                                                <rect key="frame" x="0.0" y="74" width="335" height="96.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asslamu Alaikum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFA-5C-Z9l">
-                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="135" height="34"/>
                                                         <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -358,7 +373,7 @@
                                                         </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWA-4c-GOU">
-                                                        <rect key="frame" x="0.0" y="27" width="276" height="35"/>
+                                                        <rect key="frame" x="0.0" y="40" width="258.5" height="56.5"/>
                                                         <string key="text">Please complete below options with your
 Favorite Settings.</string>
                                                         <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
@@ -372,7 +387,7 @@ Favorite Settings.</string>
                                                 <variation key="heightClass=regular-widthClass=regular" spacing="16"/>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKc-Gx-GVg">
-                                                <rect key="frame" x="0.0" y="136.5" width="335" height="500"/>
+                                                <rect key="frame" x="0.0" y="186.5" width="335" height="500"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1Y-Vm-fyD">
                                                         <rect key="frame" x="0.0" y="10" width="335" height="480"/>
@@ -380,7 +395,7 @@ Favorite Settings.</string>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="f9J-AS-jKA">
                                                                 <rect key="frame" x="20" y="20" width="295" height="440"/>
                                                                 <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMq-QR-QA1" customClass="ZDSkyTextField" customModule="قرآننا" customModuleProvider="target">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMq-QR-QA1" customClass="ZDSkyTextField" customModule="QuranApp" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="295" height="80"/>
                                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
@@ -389,22 +404,22 @@ Favorite Settings.</string>
                                                                             </constraint>
                                                                         </constraints>
                                                                     </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wf-oT-kYj" customClass="ZDSkyTextField" customModule="قرآننا" customModuleProvider="target">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wf-oT-kYj" customClass="ZDSkyTextField" customModule="QuranApp" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="90" width="295" height="80"/>
                                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67h-IO-InQ" customClass="ZDSkyTextField" customModule="قرآننا" customModuleProvider="target">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67h-IO-InQ" customClass="ZDSkyTextField" customModule="QuranApp" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="180" width="295" height="80"/>
                                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0H-1I-rMp" customClass="ZDSkyTextField" customModule="قرآننا" customModuleProvider="target">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0H-1I-rMp" customClass="ZDSkyTextField" customModule="QuranApp" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="270" width="295" height="80"/>
                                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ubg-0s-xp8">
                                                                         <rect key="frame" x="0.0" y="360" width="295" height="80"/>
                                                                         <subviews>
-                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqv-hI-oJI" customClass="ZDSkyTextField" customModule="قرآننا" customModuleProvider="target">
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqv-hI-oJI" customClass="ZDSkyTextField" customModule="QuranApp" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="80"/>
                                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             </view>
@@ -453,7 +468,7 @@ Favorite Settings.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCe-FA-A0k">
-                                                <rect key="frame" x="0.0" y="652.5" width="335" height="60"/>
+                                                <rect key="frame" x="0.0" y="702.5" width="335" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5u-wt-SZ4" customClass="TransitionButton" customModule="TransitionButton">
                                                         <rect key="frame" x="206" y="0.0" width="129" height="60"/>
@@ -487,7 +502,7 @@ Favorite Settings.</string>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HK-Fv-vBB">
-                                                <rect key="frame" x="0.0" y="728.5" width="335" height="36"/>
+                                                <rect key="frame" x="0.0" y="778.5" width="335" height="50"/>
                                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="20"/>
                                                 <state key="normal" title="Skip">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -557,7 +572,7 @@ Favorite Settings.</string>
     </scenes>
     <designables>
         <designable name="f5u-wt-SZ4">
-            <size key="intrinsicContentSize" width="135" height="20"/>
+            <size key="intrinsicContentSize" width="129" height="32"/>
         </designable>
     </designables>
     <resources>
@@ -569,6 +584,9 @@ Favorite Settings.</string>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

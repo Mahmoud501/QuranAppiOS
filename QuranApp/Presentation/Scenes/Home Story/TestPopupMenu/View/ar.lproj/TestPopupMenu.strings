@@ -2,8 +2,11 @@
 /* Class = "UIButton"; normalTitle = "Understand (Tafseer + words)"; ObjectID = "Afa-lg-2Z4"; */
 "Afa-lg-2Z4.normalTitle" = "اختبار الفهم";
 
+
+"ZW6-eQ-wdU.normalTitle" = "اختبار الصوت";
+
 /* Class = "UIButton"; normalTitle = "Voice"; ObjectID = "AqI-Ez-xbG"; */
-"AqI-Ez-xbG.normalTitle" = "اختبار الصوت";
+"AqI-Ez-xbG.normalTitle" = "اختبار تسجيل الصوت";
 
 /* Class = "UIButton"; normalTitle = "Complete the Ayat"; ObjectID = "Enp-bB-yHm"; */
 "Enp-bB-yHm.normalTitle" = "اختبار اكمل الايات";

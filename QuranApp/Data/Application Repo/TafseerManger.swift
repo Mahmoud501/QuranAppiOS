@@ -18,6 +18,7 @@ class TafseerManger {
         let repo = CoreDataRepository<CTafseerModel>.init()
         let f1 = CTafseerModel.init(context: repo.context!)
         f1.id = id
+        f1.idInt = Int16(id)!
         f1.name_ar = name_ar
         f1.name_en = name_en
         f1.link = link
@@ -51,6 +52,7 @@ class TafseerManger {
             let repo = CoreDataRepository<CTafseerDetailModel>.init()
             let tafseerDetail = CTafseerDetailModel.init(context: repo.context!)
             tafseerDetail.id = (i + 1).description
+            tafseerDetail.idInt = Int16(i + 1)
             tafseerDetail.tafseer_id = from.id
             tafseerDetail.tafseer = from
             tafseerDetail.ayah_id = (i + 1).description

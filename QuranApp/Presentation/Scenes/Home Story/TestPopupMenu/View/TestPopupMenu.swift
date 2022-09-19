@@ -16,6 +16,7 @@ protocol TestPopupMenuDelegate: class {
     func didTapWordTest()
     func didTapSortTest()
     func didTapCompleteAyatTest()
+    func didTapVoiceRecite()
 }
 
 class TestPopupMenu: UIViewController, UIScrollViewDelegate, UIGestureRecognizerDelegate {
@@ -42,6 +43,11 @@ class TestPopupMenu: UIViewController, UIScrollViewDelegate, UIGestureRecognizer
         vuDrag.layer.masksToBounds = true
         vuDragLine.layer.cornerRadius = vuDragLine.frame.size.height / 2
         vuDragLine.layer.masksToBounds = true
+        DispatchQueue.main.async {
+            let btnVoiceRecite = self.view.viewWithTag(6) as! UIButton
+            btnVoiceRecite.fadeIn(finished: true)
+            
+        }
         //vuContain.delegate = self
     }
     
@@ -67,6 +73,8 @@ class TestPopupMenu: UIViewController, UIScrollViewDelegate, UIGestureRecognizer
                 self.delegate?.didTapSortTest()
             }else if sender.tag == 5 {
                 self.delegate?.didTapCompleteAyatTest()
+            }else if sender.tag == 6 {
+                self.delegate?.didTapVoiceRecite()
             }
         }
     }
@@ -127,5 +135,9 @@ class TestPopupMenu: UIViewController, UIScrollViewDelegate, UIGestureRecognizer
         }
 
     }
+    
+    
+    ///
+
 
 }

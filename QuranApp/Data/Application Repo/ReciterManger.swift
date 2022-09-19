@@ -123,6 +123,7 @@ class ReciterManger {
         
         let r1 = CReciter.init(context: repo.context!)
         r1.id = ReciterName.AbdulBaset.rawValue.description
+        r1.idInt = Int16(ReciterName.AbdulBaset.rawValue)!
         r1.image_path = "Abdul_Basit_Mujawwad.png"
         r1.link = "http://www.everyayah.com/data/AbdulSamad_64kbps_QuranExplorer.Com/"
         r1.name_ar = "عبد الباسط عبد الصمد"
@@ -131,6 +132,7 @@ class ReciterManger {
 
         let r2 = CReciter.init(context: repo.context!)
         r2.id = ReciterName.AbdulBaset.rawValue.description
+        r2.idInt = Int16(ReciterName.AbdulBaset.rawValue)!
         r2.image_path = "Abdul_Basit_Mujawwad.png"
         r2.link = "http://www.everyayah.com/data/Abdul_Basit_Murattal_64kbps/"
         r2.name_ar = "عبد الباسط عبد الصمد"
@@ -139,6 +141,7 @@ class ReciterManger {
 
         let r3 = CReciter.init(context: repo.context!)
         r3.id = ReciterName.Abdullaah_3awwaad_AlJuhaynee.rawValue.description
+        r3.idInt = Int16(ReciterName.Abdullaah_3awwaad_AlJuhaynee.rawValue)!
         r3.image_path = "abdullah_awad_Al-juhani.png"
         r3.link = "http://www.everyayah.com/data/Abdullaah_3awwaad_Al-Juhaynee_128kbps/"
         r3.name_ar = "عبدالله عواد الجهينى"
@@ -147,6 +150,7 @@ class ReciterManger {
 
         let r4 = CReciter.init(context: repo.context!)
         r4.id = ReciterName.Abdullah_Basfar.rawValue.description
+        r4.idInt = Int16(ReciterName.Abdullah_Basfar.rawValue)!
         r4.image_path = "Abdullah Basfar.png"
         r4.link = "http://www.everyayah.com/data/Abdullah_Basfar_64kbps/"
         r4.name_ar = "عبدالله بن على بصفر"
@@ -155,6 +159,7 @@ class ReciterManger {
 
         let r5 = CReciter.init(context: repo.context!)
         r5.id = ReciterName.Abdullah_Matroud.rawValue.description
+        r5.idInt = Int16(ReciterName.Abdullah_Matroud.rawValue)!
         r5.image_path = "abdallah_matroud.png"
         r5.link = "http://www.everyayah.com/data/Abdullah_Matroud_128kbps/"
         r5.name_ar = "عبدالله مطرود"
@@ -163,6 +168,7 @@ class ReciterManger {
 
         let r6 = CReciter.init(context: repo.context!)
         r6.id = ReciterName.Abdurrahmaan_AlSudais.rawValue.description
+        r6.idInt = Int16(ReciterName.Abdurrahmaan_AlSudais.rawValue)!
         r6.image_path = "Abdul Rahman Al Sudais.png"
         r6.link = "http://www.everyayah.com/data/Abdurrahmaan_As-Sudais_64kbps/"
         r6.name_ar = "عبدالرحمن السديسى"
@@ -171,6 +177,7 @@ class ReciterManger {
 
         let r7 = CReciter.init(context: repo.context!)
         r7.id = ReciterName.Abu_Bakr_Ash_Shaatree.rawValue.description
+        r7.idInt = Int16(ReciterName.Abu_Bakr_Ash_Shaatree.rawValue)!
         r7.image_path = "Abu Bakr Shatri.jpg"
         r7.link = "http://www.everyayah.com/data/Abu_Bakr_Ash-Shaatree_64kbps/"
         r7.name_ar = "ابو بكر الشاطرى"
@@ -179,6 +186,7 @@ class ReciterManger {
 
         let r8 = CReciter.init(context: repo.context!)
         r8.id = ReciterName.Ahmed_Neana.rawValue.description
+        r8.idInt = Int16(ReciterName.Ahmed_Neana.rawValue)!
         r8.image_path = "Ahmed Nuinaa.jpg"
         r8.link = "http://www.everyayah.com/data/Ahmed_Neana_128kbps/"
         r8.name_ar = "احمد نعينع"
@@ -187,6 +195,7 @@ class ReciterManger {
 
         let r9 = CReciter.init(context: repo.context!)
         r9.id = ReciterName.Ahmed_ibn_Ali_alAjamy.rawValue.description
+        r9.idInt = Int16(ReciterName.Ahmed_ibn_Ali_alAjamy.rawValue)!
         r9.image_path = "Ahmed Al Ajmi.png"
         r9.link = "http://www.everyayah.com/data/Ahmed_ibn_Ali_al-Ajamy_64kbps_QuranExplorer.Com/"
         r9.name_ar = "احمد بن على العجمى"
@@ -195,6 +204,7 @@ class ReciterManger {
 
         let r10 = CReciter.init(context: repo.context!)
         r10.id = ReciterName.Akram_AlAlaqimy.rawValue.description
+        r10.idInt = Int16(ReciterName.Akram_AlAlaqimy.rawValue)!
         r10.image_path = "Akram Al Aalakmi.png"
         r10.link = "http://www.everyayah.com/data/Akram_AlAlaqimy_128kbps/"
         r10.name_ar = "اكرم العلاقمي"
@@ -203,6 +213,7 @@ class ReciterManger {
 
         let r11 = CReciter.init(context: repo.context!)
         r11.id = ReciterName.Alafasy.rawValue.description
+        r11.idInt = Int16(ReciterName.Alafasy.rawValue)!
         r11.image_path = "Mishary Al Afasy.png"
         r11.link = "http://www.everyayah.com/data/Alafasy_64kbps/"
         r11.name_ar = "مشارى بن راشد العفاسى"
@@ -211,6 +222,7 @@ class ReciterManger {
 
         let r12 = CReciter.init(context: repo.context!)
         r12.id = ReciterName.Ali_Hajjaj_AlSuesy.rawValue.description
+        r12.idInt = Int16(ReciterName.Ali_Hajjaj_AlSuesy.rawValue)!
         r12.image_path = "ali-hajjaj-souissi.png"
         r12.link = "http://www.everyayah.com/data/Ali_Hajjaj_AlSuesy_128kbps/"
         r12.name_ar = "على حجاج السويسى"
@@ -219,6 +231,7 @@ class ReciterManger {
 
         let r13 = CReciter.init(context: repo.context!)
         r13.id = ReciterName.Ali_Jaber.rawValue.description
+        r13.idInt = Int16(ReciterName.Ali_Jaber.rawValue)!
         r13.image_path = "ali-jaber.png"
         r13.link = "http://www.everyayah.com/data/Ali_Jaber_64kbps/"
         r13.name_ar = "على جابر"
@@ -227,6 +240,7 @@ class ReciterManger {
 
         let r14 = CReciter.init(context: repo.context!)
         r14.id = ReciterName.Ayman_Sowaid.rawValue.description
+        r14.idInt = Int16(ReciterName.Ayman_Sowaid.rawValue)!
         r14.image_path = "ayman-swid.jpg"
         r14.link = "http://www.everyayah.com/data/Ayman_Sowaid_64kbps/"
         r14.name_ar = "أيمن سويد"
@@ -235,6 +249,7 @@ class ReciterManger {
 
         let r15 = CReciter.init(context: repo.context!)
         r15.id = ReciterName.English.rawValue.description
+        r15.idInt = Int16(ReciterName.English.rawValue)!
         r15.image_path = "english.png"
         r15.link = "http://www.everyayah.com/data/English/Sahih_Intnl_Ibrahim_Walk_192kbps/"
         r15.name_ar = "English"
@@ -243,6 +258,7 @@ class ReciterManger {
 
         let r16 = CReciter.init(context: repo.context!)
         r16.id = ReciterName.Fares_Abbad.rawValue.description
+        r16.idInt = Int16(ReciterName.Fares_Abbad.rawValue)!
         r16.image_path = "fares-abbad.png"
         r16.link = "http://www.everyayah.com/data/Fares_Abbad_64kbps/"
         r16.name_ar = "فارس عباد"
@@ -251,6 +267,7 @@ class ReciterManger {
 
         let r17 = CReciter.init(context: repo.context!)
         r17.id = ReciterName.Ghamadi.rawValue.description
+        r17.idInt = Int16(ReciterName.Ghamadi.rawValue)!
         r17.image_path = "saad-el-ghamidi.png"
         r17.link = "http://www.everyayah.com/data/Ghamadi_40kbps/"
         r17.name_ar = "سعد الغامدى"
@@ -259,6 +276,7 @@ class ReciterManger {
 
         let r18 = CReciter.init(context: repo.context!)
         r18.id = ReciterName.Hani_Rifai.rawValue.description
+        r18.idInt = Int16(ReciterName.Hani_Rifai.rawValue)!
         r18.image_path = "hani-ar-rifai.png"
         r18.link = "http://www.everyayah.com/data/Hani_Rifai_64kbps/"
         r18.name_ar = "هانى الرفاعى"
@@ -267,6 +285,7 @@ class ReciterManger {
 
         let r19 = CReciter.init(context: repo.context!)
         r19.id = ReciterName.Hudhaify.rawValue.description
+        r19.idInt = Int16(ReciterName.Hudhaify.rawValue)!
         r19.image_path = "ali-alhodaifi.png"
         r19.link = "http://www.everyayah.com/data/Hudhaify_64kbps/"
         r19.name_ar = "على الحذيفى"
@@ -275,6 +294,7 @@ class ReciterManger {
 
         let r20 = CReciter.init(context: repo.context!)
         r20.id = ReciterName.Husary.rawValue.description
+        r20.idInt = Int16(ReciterName.Husary.rawValue)!
         r20.image_path = "mahmoud-khalil-al-hussary.png"
         r20.link = "http://www.everyayah.com/data/Husary_64kbps/"
         r20.name_ar = "الحصرى"
@@ -283,6 +303,7 @@ class ReciterManger {
 
         let r21 = CReciter.init(context: repo.context!)
         r21.id = ReciterName.Husary.rawValue.description
+        r21.idInt = Int16(ReciterName.Husary.rawValue)!
         r21.image_path = "mahmoud-khalil-al-hussary.png"
         r21.link = "http://www.everyayah.com/data/Husary_Mujawwad_64kbps/"
         r21.name_ar = "الحصرى"
@@ -291,6 +312,7 @@ class ReciterManger {
 
         let r22 = CReciter.init(context: repo.context!)
         r22.id = ReciterName.Husary.rawValue.description
+        r22.idInt = Int16(ReciterName.Husary.rawValue)!
         r22.image_path = "mahmoud-khalil-al-hussary.png"
         r22.link = "http://www.everyayah.com/data/Husary_Muallim_128kbps/"
         r22.name_ar = "الحصرى"
@@ -299,6 +321,7 @@ class ReciterManger {
 
         let r23 = CReciter.init(context: repo.context!)
         r23.id = ReciterName.Ibrahim_Akhdar.rawValue.description
+        r23.idInt = Int16(ReciterName.Ibrahim_Akhdar.rawValue)!
         r23.image_path = "ibrahim-al-akhdar.png"
         r23.link = "http://www.everyayah.com/data/Ibrahim_Akhdar_32kbps/"
         r23.name_ar = "إبراهيم الأخضر"
@@ -307,6 +330,7 @@ class ReciterManger {
 
         let r24 = CReciter.init(context: repo.context!)
         r24.id = ReciterName.Karim_Mansoori.rawValue.description
+        r24.idInt = Int16(ReciterName.Karim_Mansoori.rawValue)!
         r24.image_path = "karim-mansouri.jpg"
         r24.link = "http://www.everyayah.com/data/Karim_Mansoori_40kbps/"
         r24.name_ar = "كريم منصورى"
@@ -315,6 +339,7 @@ class ReciterManger {
 
         let r25 = CReciter.init(context: repo.context!)
         r25.id = ReciterName.Khaalid_Abdullaah_alQahtaanee.rawValue.description
+        r25.idInt = Int16(ReciterName.Khaalid_Abdullaah_alQahtaanee.rawValue)!
         r25.image_path = "khaled-al-qahtani.png"
         r25.link = "http://www.everyayah.com/data/Khaalid_Abdullaah_al-Qahtaanee_192kbps/"
         r25.name_ar = "خالد القحطاني"
@@ -323,6 +348,7 @@ class ReciterManger {
 
         let r26 = CReciter.init(context: repo.context!)
         r26.id = ReciterName.Maher_AlMuaiqly.rawValue.description
+        r26.idInt = Int16(ReciterName.Maher_AlMuaiqly.rawValue)!
         r26.image_path = "maher-al-mueaqly.png"
         r26.link = "http://www.everyayah.com/data/Maher_AlMuaiqly_64kbps/"
         r26.name_ar = "ماهر المعيقلي"
@@ -331,6 +357,7 @@ class ReciterManger {
 
         let r27 = CReciter.init(context: repo.context!)
         r27.id = ReciterName.Menshawi.rawValue.description
+        r27.idInt = Int16(ReciterName.Menshawi.rawValue)!
         r27.image_path = "mohamed-seddik-el-menchaoui.png"
         r27.link = "http://www.everyayah.com/data/Menshawi_16kbps/"
         r27.name_ar = "محمد صديق المنشاوى"
@@ -339,6 +366,7 @@ class ReciterManger {
 
         let r28 = CReciter.init(context: repo.context!)
         r28.id = ReciterName.Menshawi.rawValue.description
+        r28.idInt = Int16(ReciterName.Menshawi.rawValue)!
         r28.image_path = "mohamed-seddik-el-menchaoui.png"
         r28.link = "http://www.everyayah.com/data/Minshawy_Mujawwad_64kbps/"
         r28.name_ar = "محمد صديق المنشاوى"
@@ -347,6 +375,7 @@ class ReciterManger {
 
         let r29 = CReciter.init(context: repo.context!)
         r29.id = ReciterName.Mohammad_al_Tablaway.rawValue.description
+        r29.idInt = Int16(ReciterName.Mohammad_al_Tablaway.rawValue)!
         r29.image_path = "mohamed-tablawi.png"
         r29.link = "http://www.everyayah.com/data/Mohammad_al_Tablaway_64kbps/"
         r29.name_ar = "محمد الطبلاوى"
@@ -355,6 +384,7 @@ class ReciterManger {
 
         let r30 = CReciter.init(context: repo.context!)
         r30.id = ReciterName.Muhammad_AbdulKareem.rawValue.description
+        r30.idInt = Int16(ReciterName.Muhammad_AbdulKareem.rawValue)!
         r30.image_path = "muhammad-abdulkareem.png"
         r30.link = "http://www.everyayah.com/data/Muhammad_AbdulKareem_128kbps/"
         r30.name_ar = "محمد عبدالكريم"
@@ -363,6 +393,7 @@ class ReciterManger {
 
         let r31 = CReciter.init(context: repo.context!)
         r31.id = ReciterName.Muhammad_Ayyoub.rawValue.description
+        r31.idInt = Int16(ReciterName.Muhammad_Ayyoub.rawValue)!
         r31.image_path = "mohamed-ayoub.png"
         r31.link = "http://www.everyayah.com/data/Muhammad_Ayyoub_64kbps/"
         r31.name_ar = "محمد أيوب"
@@ -371,6 +402,7 @@ class ReciterManger {
 
         let r32 = CReciter.init(context: repo.context!)
         r32.id = ReciterName.Muhammad_Jibreel.rawValue.description
+        r32.idInt = Int16(ReciterName.Muhammad_Jibreel.rawValue)!
         r32.image_path = "muhammad-jebril.png"
         r32.link = "http://www.everyayah.com/data/Muhammad_Jibreel_64kbps/"
         r32.name_ar = "محمد جبريل"
@@ -379,6 +411,7 @@ class ReciterManger {
 
         let r33 = CReciter.init(context: repo.context!)
         r33.id = ReciterName.Muhsin_Al_Qasim.rawValue.description
+        r33.idInt = Int16(ReciterName.Muhsin_Al_Qasim.rawValue)!
         r33.image_path = "abdulmohsen-al-qasim.png"
         r33.link = "http://www.everyayah.com/data/Muhsin_Al_Qasim_192kbps/"
         r33.name_ar = "عبدالمحسن القاسم"
@@ -387,6 +420,7 @@ class ReciterManger {
 
         let r34 = CReciter.init(context: repo.context!)
         r34.id = ReciterName.Abdullah_Basfar.rawValue
+        r34.idInt = Int16(ReciterName.Abdullah_Basfar.rawValue)!
         r34.image_path = "Abdullah Basfar.png"
         r34.link = "http://www.everyayah.com/data/MultiLanguage/Basfar_Walk_192kbps/"
         r34.name_ar = "عبدالله بن على بصفر"
@@ -395,6 +429,7 @@ class ReciterManger {
 
         let r35 = CReciter.init(context: repo.context!)
         r35.id = ReciterName.Mustafa_Ismail.rawValue
+        r35.idInt = Int16(ReciterName.Mustafa_Ismail.rawValue)!
         r35.image_path = "mustapha-ismail.png"
         r35.link = "http://www.everyayah.com/data/Mustafa_Ismail_48kbps/"
         r35.name_ar = "مصطفى اسماعيل"
@@ -403,6 +438,7 @@ class ReciterManger {
 
         let r36 = CReciter.init(context: repo.context!)
         r36.id = ReciterName.Nasser_Alqatami.rawValue
+        r36.idInt = Int16(ReciterName.Nasser_Alqatami.rawValue)!
         r36.image_path = "nasser-al-qatami.png"
         r36.link = "http://www.everyayah.com/data/Nasser_Alqatami_128kbps/"
         r36.name_ar = "ناصر القطامى"
@@ -411,6 +447,7 @@ class ReciterManger {
 
         let r37 = CReciter.init(context: repo.context!)
         r37.id = ReciterName.Parhizgar.rawValue
+        r37.idInt = Int16(ReciterName.Parhizgar.rawValue)!
         r37.image_path = "shahriar-parhizgar.jpg"
         r37.link = "http://www.everyayah.com/data/Parhizgar_48kbps/"
         r37.name_ar = "شهریار پرهیزگار "
@@ -419,6 +456,7 @@ class ReciterManger {
 
         let r38 = CReciter.init(context: repo.context!)
         r38.id = ReciterName.Sahl_Yassin.rawValue
+        r38.idInt = Int16(ReciterName.Sahl_Yassin.rawValue)!
         r38.image_path = "sahl-yassin.png"
         r38.link = "http://www.everyayah.com/data/Sahl_Yassin_128kbps/"
         r38.name_ar = "سهل ياسين"
@@ -427,6 +465,7 @@ class ReciterManger {
 
         let r39 = CReciter.init(context: repo.context!)
         r39.id = ReciterName.Salaah_AbdulRahman_Bukhatir.rawValue
+        r39.idInt = Int16(ReciterName.Salaah_AbdulRahman_Bukhatir.rawValue)!
         r39.image_path = "salah-bukhatir.png"
         r39.link = "http://www.everyayah.com/data/Salaah_AbdulRahman_Bukhatir_128kbps/"
         r39.name_ar = "صلاح عبدالرحمن بوخاطر"
@@ -435,6 +474,7 @@ class ReciterManger {
 
         let r40 = CReciter.init(context: repo.context!)
         r40.id = ReciterName.Salah_Al_Budair.rawValue
+        r40.idInt = Int16(ReciterName.Salah_Al_Budair.rawValue)!
         r40.image_path = "salah-al-budair.png"
         r40.link = "http://www.everyayah.com/data/Salah_Al_Budair_128kbps/"
         r40.name_ar = "صلاح البدير"
@@ -443,6 +483,7 @@ class ReciterManger {
 
         let r41 = CReciter.init(context: repo.context!)
         r41.id = ReciterName.Saoud_Shuraim.rawValue
+        r41.idInt = Int16(ReciterName.Saoud_Shuraim.rawValue)!
         r41.image_path = "saoud-shuraim.png"
         r41.link = "http://www.everyayah.com/data/Saood_ash-Shuraym_64kbps/"
         r41.name_ar = "سعود الشريم"
@@ -451,6 +492,7 @@ class ReciterManger {
 
         let r42 = CReciter.init(context: repo.context!)
         r42.id = ReciterName.Yaser_Salamah.rawValue
+        r42.idInt = Int16(ReciterName.Yaser_Salamah.rawValue)!
         r42.image_path = "yasser-salama.jpg"
         r42.link = "http://www.everyayah.com/data/Yaser_Salamah_128kbps/"
         r42.name_ar = "ياسر سلامه"
@@ -459,6 +501,7 @@ class ReciterManger {
 
         let r43 = CReciter.init(context: repo.context!)
         r43.id = ReciterName.Yasser_AdDussary.rawValue
+        r43.idInt = Int16(ReciterName.Yasser_AdDussary.rawValue)!
         r43.image_path = "yasser-al-dossari.png"
         r43.link = "http://www.everyayah.com/data/Yasser_Ad-Dussary_128kbps/"
         r43.name_ar = "ياسر الدوسرى"
@@ -467,6 +510,7 @@ class ReciterManger {
 
         let r44 = CReciter.init(context: repo.context!)
         r44.id = ReciterName.Aziz_Alili.rawValue
+        r44.idInt = Int16(ReciterName.Aziz_Alili.rawValue)!
         r44.image_path = "aziz-alili.jpg"
         r44.link = "http://www.everyayah.com/data/aziz_alili_128kbps/"
         r44.name_ar = "عزيز عليلى"
@@ -475,6 +519,7 @@ class ReciterManger {
 
         let r45 = CReciter.init(context: repo.context!)
         r45.id = ReciterName.khalefa_al_tunaiji.rawValue
+        r45.idInt = Int16(ReciterName.khalefa_al_tunaiji.rawValue)!
         r45.image_path = "khalifa-al-tunaiji.png"
         r45.link = "http://www.everyayah.com/data/khalefa_al_tunaiji_64kbps/"
         r45.name_ar = "خليفة الطنيجى"
@@ -483,6 +528,7 @@ class ReciterManger {
 
         let r46 = CReciter.init(context: repo.context!)
         r46.id = ReciterName.mahmoud_ali_al_banna.rawValue
+        r46.idInt = Int16(ReciterName.mahmoud_ali_al_banna.rawValue)!
         r46.image_path = "mahmud-ali-al-banna.png"
         r46.link = "http://www.everyayah.com/data/mahmoud_ali_al_banna_32kbps/"
         r46.name_ar = "محمود على البنا"

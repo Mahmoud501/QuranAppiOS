@@ -131,4 +131,17 @@ extension String {
     }
     
     
+    public var ayahVoiceFilter: String {
+        var str = self
+
+        let map =   [
+            
+            "و": "ؤ" ,
+            "ص": "س" ,
+        ]
+             
+        map.forEach { str = str.replacingOccurrences(of: $0, with: $1) }
+        return str
+    }
+    
 }

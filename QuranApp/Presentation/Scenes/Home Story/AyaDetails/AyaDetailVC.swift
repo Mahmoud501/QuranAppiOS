@@ -126,6 +126,7 @@ extension AyaDetailVC {
         let tafseers = (ayah?.tafseers?.array as? [CTafseerDetailModel])
         let tafseer = tafseers?.first(where: { $0.tafseer_id == TafseerName.Moyaseer.rawValue})
         self.lbltafseer.text = tafseer?.desc
+        self.lblSurhaName.text = ayah?.surha?.name_ar
         self.lblAyahNum.text = "[" + "Ayah.no".localized + (ayah?.sort.description ?? "") + "]"
         if setting?.quranWithMark == true {
             self.lblAyah.text = ayah?.desc

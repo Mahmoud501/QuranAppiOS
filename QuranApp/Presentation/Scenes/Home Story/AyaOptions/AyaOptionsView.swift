@@ -50,7 +50,8 @@ class AyaOptionsView: UIView {
     
     var memorizedAyat: (()->())?
     var colorAyat: (()->())?
-    var willPlayAyah: ((CAyatModel?, Bool?) -> ())?    
+    var willPlayAyah: ((CAyatModel?, Bool?) -> ())?
+    var scrollToAyah: ((CAyatModel?) -> ())?
     var player = PlayerAyat()
     var orderAyat: [CAyatModel]?
     var blockStepper = false
@@ -339,6 +340,12 @@ extension AyaOptionsView: TestPopupMenuDelegate {
         AppFactory.homeVC?.TVAyat.reloadData()
     }
     
+    func didTapVoiceRecite() {
+        print("voice")
+        let voiceReciteVC = VoiceReciteTestVC.createVC()
+        voiceReciteVC.ayat = self.orderAyat
+        vc.present(voiceReciteVC, animated: true, completion: nil)
+    }
     
 }
 

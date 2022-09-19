@@ -170,7 +170,7 @@ class SettingRepo {
          let api = AlmofireRequest<SettingInOut.EmptyDown>(value: api_request)
         
        //https://www.tutorialspoint.com/swift/swift_tutorial.pdf //https://ia801609.us.archive.org/31/items/bensaoud_gmail_20170308_0721/%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D8%AA%D8%AC%D9%88%D9%8A%D8%AF%20%D8%A7%D9%84%D9%85%D9%84%D9%88%D9%86.pdf
-         api.path = "http://quranapp.info/public/coran-moulawane.pdf"
+         api.path = "https://quranapp.info/public/coran-moulawane.pdf"
          api.method = .get
         let fileName = "PDFQuranTajweed"
         let response = self.network.download(file: File(name: fileName, key: "", mimeType: .pdf, data: Data()), request: api, debug: true)

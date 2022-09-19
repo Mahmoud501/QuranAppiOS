@@ -26,7 +26,7 @@ class ContactusVC: BaseViewController {
     }
     
     @IBAction func sendClicked(_ sender: Any) {
-        ProgressHUD.shared.show()
+        ZVProgressHUD.show()
         var request = SettingInOut.contactus.DefaultRqeuest()
         request.name = txtName.text
         request.email = txtEmail.text

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -35,18 +36,60 @@
                     </connections>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x59-zy-Fdz">
-                    <rect key="frame" x="0.0" y="234" width="320" height="334"/>
+                    <rect key="frame" x="0.0" y="176" width="320" height="392"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yh0-ld-4wO">
-                            <rect key="frame" x="0.0" y="55" width="320" height="279"/>
+                            <rect key="frame" x="0.0" y="55" width="320" height="337"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rMa-bD-ezf">
-                                    <rect key="frame" x="10" y="10" width="300" height="224"/>
+                                    <rect key="frame" x="10" y="10" width="300" height="282"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CxO-Ca-nsJ">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYh-6J-0E5">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
                                             <subviews>
-                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfh-Bb-w9Z">
+                                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZW6-eQ-wdU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                                    <state key="normal" title="Voice">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="28"/>
+                                                    </variation>
+                                                    <connections>
+                                                        <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="w5u-Si-7Qq"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mh-ap-Wdy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                                    <state key="normal" title=" ">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="28"/>
+                                                    </variation>
+                                                    <connections>
+                                                        <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="Qjd-IS-BPv"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="5Mh-ap-Wdy" secondAttribute="trailing" id="4X5-6D-EYA"/>
+                                                <constraint firstItem="ZW6-eQ-wdU" firstAttribute="leading" secondItem="oYh-6J-0E5" secondAttribute="leading" id="8ct-N5-enJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="5Mh-ap-Wdy" secondAttribute="bottom" id="Dhf-JP-vIQ"/>
+                                                <constraint firstItem="ZW6-eQ-wdU" firstAttribute="top" secondItem="oYh-6J-0E5" secondAttribute="top" id="HQL-z0-XPu"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZW6-eQ-wdU" secondAttribute="trailing" id="l50-Kn-siU"/>
+                                                <constraint firstItem="5Mh-ap-Wdy" firstAttribute="top" secondItem="oYh-6J-0E5" secondAttribute="top" id="lAh-Z6-ZOU"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZW6-eQ-wdU" secondAttribute="bottom" id="niP-Bg-uGa"/>
+                                                <constraint firstItem="5Mh-ap-Wdy" firstAttribute="leading" secondItem="oYh-6J-0E5" secondAttribute="leading" id="ow9-lW-AHi"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CxO-Ca-nsJ">
+                                            <rect key="frame" x="0.0" y="58" width="300" height="50"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfh-Bb-w9Z">
                                                     <rect key="frame" x="0.0" y="0.0" width="146" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="Qmu-he-AsK"/>
@@ -62,14 +105,14 @@
                                                         <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="PrY-0e-CEt"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3y-ax-6y9">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3y-ax-6y9">
                                                     <rect key="frame" x="154" y="0.0" width="146" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="mS6-5G-0qV"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
                                                     <state key="normal" title="Clear Wrong Writing">
-                                                        <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleColor" systemColor="systemRedColor"/>
                                                     </state>
                                                     <variation key="heightClass=regular-widthClass=regular">
                                                         <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="26"/>
@@ -80,10 +123,10 @@
                                                 </button>
                                             </subviews>
                                         </stackView>
-                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqI-Ez-xbG">
-                                            <rect key="frame" x="0.0" y="58" width="300" height="50"/>
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqI-Ez-xbG">
+                                            <rect key="frame" x="0.0" y="116" width="300" height="50"/>
                                             <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
-                                            <state key="normal" title="Voice">
+                                            <state key="normal" title="Voice Record">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <variation key="heightClass=regular-widthClass=regular">
@@ -93,8 +136,8 @@
                                                 <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="IOT-OE-Bvq"/>
                                             </connections>
                                         </button>
-                                        <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afa-lg-2Z4">
-                                            <rect key="frame" x="0.0" y="112" width="300" height="0.0"/>
+                                        <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afa-lg-2Z4">
+                                            <rect key="frame" x="0.0" y="170" width="300" height="0.0"/>
                                             <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
                                             <state key="normal" title="Understand (Tafseer + words)">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -106,8 +149,8 @@
                                                 <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="KBu-2v-HPf"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7R-Nb-WAP">
-                                            <rect key="frame" x="0.0" y="116" width="300" height="50"/>
+                                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7R-Nb-WAP">
+                                            <rect key="frame" x="0.0" y="174" width="300" height="50"/>
                                             <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
                                             <state key="normal" title="Sort">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -119,8 +162,8 @@
                                                 <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="SVh-wU-r0V"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enp-bB-yHm">
-                                            <rect key="frame" x="0.0" y="174" width="300" height="50"/>
+                                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enp-bB-yHm">
+                                            <rect key="frame" x="0.0" y="232" width="300" height="50"/>
                                             <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
                                             <state key="normal" title="Complete the Ayat">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -136,7 +179,7 @@
                                     <variation key="heightClass=regular-widthClass=regular" spacing="18"/>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="rMa-bD-ezf" secondAttribute="trailing" constant="10" id="4yi-Fc-XU7"/>
                                 <constraint firstItem="rMa-bD-ezf" firstAttribute="leading" secondItem="Yh0-ld-4wO" secondAttribute="leading" constant="10" id="BZD-fb-Lx0"/>
@@ -187,7 +230,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="XvG-el-hrA" secondAttribute="bottom" id="06h-bi-cHx"/>
                                 <constraint firstItem="I7V-91-OUI" firstAttribute="centerX" secondItem="5hu-oJ-cql" secondAttribute="centerX" id="1KK-Iv-xIl"/>
@@ -222,6 +265,7 @@
                     </constraints>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="x59-zy-Fdz" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="GOv-TF-k1q"/>
@@ -232,7 +276,6 @@
                 <constraint firstItem="lLx-26-DYz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="r1M-jC-9iC"/>
                 <constraint firstItem="lLx-26-DYz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="udy-Fn-JKb"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <connections>
                 <outletCollection property="gestureRecognizers" destination="Ifq-3u-dsi" appends="YES" id="ZvD-CU-6yl"/>
             </connections>
@@ -252,5 +295,11 @@
     </objects>
     <resources>
         <image name="ic_cancel_24px" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

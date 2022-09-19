@@ -176,12 +176,12 @@ extension HomeTabbarController {
         if speech.isRunning == false {
             return
         }
-        ProgressHUD.shared.show()
+        ZVProgressHUD.show()
         self.pulseEffect.removeFromSuperlayer()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.speech.stopRecording()
             AudioServicesPlaySystemSound(1114)
-            ProgressHUD.shared.dismiss()
+            ZVProgressHUD.dismiss()
             let ayah = SearchVoicePresenter.getAyahByVoiceText(text: self.textSearch)
             print(self.textSearch)
             if let ayah = ayah {

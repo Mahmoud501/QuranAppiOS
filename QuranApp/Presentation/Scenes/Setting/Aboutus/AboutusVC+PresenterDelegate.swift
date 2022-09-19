@@ -13,7 +13,7 @@ import ZVProgressHUD
 extension AboutusVC: AboutusView {
     
     func finish() {
-        ProgressHUD.shared.dismiss()
+        ZVProgressHUD.dismiss()
     }
     
     func success() {
@@ -27,7 +27,7 @@ extension AboutusVC: AboutusView {
     
     @objc func reload() {
         AlertClass2.hideMessage()
-        ProgressHUD.shared.show()
+        ZVProgressHUD.show()
         presenter?.getAbout()
     }
 }

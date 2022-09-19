@@ -104,8 +104,10 @@ extension SplachVC: UIViewControllerAnimatedTransitioning {
         let snapshot = img1.snapshotView(afterScreenUpdates: false)
         snapshot?.contentMode = .scaleAspectFill
         snapshot?.frame = frm
-        fromViewController.view.bringSubviewToFront(snapshot!)
-        fromViewController.view.addSubview(snapshot!)
+        if let snapshot = snapshot {
+            fromViewController.view.bringSubviewToFront(snapshot)
+            fromViewController.view.addSubview(snapshot)
+        }        
         img1.alpha = 0
         img2.alpha = 0
         for item in toViewController.view.subviews {

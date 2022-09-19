@@ -13,7 +13,7 @@ import ZVProgressHUD
 extension ContactusVC: ContactusView {
     
     func finish() {
-        ProgressHUD.shared.dismiss()
+        ZVProgressHUD.dismiss()
     }
     
     func success(str: String) {

@@ -9,7 +9,7 @@ target 'QuranApp' do
 
   pod 'SwiftMessages'
   pod 'EasyTipView'
-  pod 'ZVProgressHUD', '~> 2.4.6'
+  pod 'ZVProgressHUD'
   pod "SkeletonView"
   pod "ESPullToRefresh"
   pod 'JNKeychain'
@@ -24,6 +24,8 @@ target 'QuranApp' do
   pod 'AHDownloadButton'
   pod "DownloadButton"
   pod 'StepSlider', '~> 1.3.0'
-  pod 'AppCenter'
-  
+  pod 'Firebase/Auth'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Analytics'
 end

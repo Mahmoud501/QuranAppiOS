@@ -29,8 +29,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>We use camera in application to upload profile picture.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>using to record your voice for searching</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We use photo in application to upload profile picture.</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>using to convert your voice to text for searching</string>
 	<key>UIAppFonts</key>
@@ -64,6 +68,8 @@
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
+		<string>fetch</string>
+		<string>remote-notification</string>
 	</array>
 	<key>UIFileSharingEnabled</key>
 	<true/>

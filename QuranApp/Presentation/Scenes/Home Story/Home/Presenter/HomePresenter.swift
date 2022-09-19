@@ -178,14 +178,20 @@ extension HomePresenter: HomeBusiness {
     
     func getAyah(section: Int,row: Int) -> CAyatModel? {
         if QuranType == "" || QuranType == "0" {
-            if (pages?[section].ayat?.array.count ?? 0) <= row { return nil }
-            return pages?[section].ayat?.array[row] as? CAyatModel
+            if (pages?.count ?? 0) <= section {return nil}
+            let ayat = pages?[section].ayat?.array as? [CAyatModel]
+            if (ayat?.count ?? 0) <= row { return nil}
+            return ayat?[row]
         }else if QuranType == "1" {
-            if (surhas?[section].ayat?.array.count ?? 0) <= row { return nil }
-            return surhas?[section].ayat?.array[row] as? CAyatModel
+            if (surhas?.count ?? 0) <= section {return nil}
+            let ayat = surhas?[section].ayat?.array  as? [CAyatModel]
+            if (ayat?.count ?? 0) <= row { return nil}
+            return ayat?[row]
         }else if QuranType == "2" {
-            if (juzhs?[section].ayat?.array.count ?? 0) <= row { return nil }
-            return juzhs?[section].ayat?.array[row] as? CAyatModel
+            if (juzhs?.count ?? 0) <= section {return nil}
+            let ayat = juzhs?[section].ayat?.array  as? [CAyatModel]
+            if (ayat?.count ?? 0) <= row { return nil}
+            return ayat?[row]
         }
         return nil
     }

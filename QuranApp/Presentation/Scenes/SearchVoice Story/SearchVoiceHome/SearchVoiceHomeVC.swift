@@ -46,8 +46,9 @@ class SearchVoiceHomeVC: BaseViewController {
         self.speech.startRecording { [weak self] (text) in
             guard let self = self else { return }
             self.textSearch = text
+            print(text)
         }
-        AudioServicesPlaySystemSound(1113)
+        AlertClass2.vibrate()
         self.pulseEffect = LFTPulseAnimation(repeatCount: Float.infinity, radius:20, position:self.vuRecord.center)
         self.pulseEffect.radius = self.vuContain.bounds.width/2
         self.pulseEffect.backgroundColor = UIColor.c1.cgColor
@@ -58,34 +59,43 @@ class SearchVoiceHomeVC: BaseViewController {
     
     @IBAction func recordClicked(_ sender: Any) {
         //finish record
-        if speech.isRunning == false {
-            return
-        }
-         ProgressHUD.shared.show()
-         self.pulseEffect.removeFromSuperlayer()
-         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-             self.speech.stopRecording()
-             AudioServicesPlaySystemSound(1114)
-             ProgressHUD.shared.dismiss()
-             let ayah = SearchVoicePresenter.getAyahByVoiceText(text: self.textSearch)
-             print(self.textSearch)
-             if let ayah = ayah {
-                self.tabBarController?.selectedIndex = 0
-                 AppFactory.homeVC?.search(ayah: ayah)
-             }else {
-                AlertClass2.ShowErrorStatusBar(vc: self, message: "search result not found".localized)
+        if speech != nil {
+            if speech.isRunning == false {
+                return
             }
-            self.speech = nil
-         }
-
-        
-        DispatchQueue.main.async {
-            if self.isRecord {
-                AudioServicesPlaySystemSound(1114)
+             ZVProgressHUD.show()
+            if self.pulseEffect != nil {
                 self.pulseEffect.removeFromSuperlayer()
-            }else {
             }
-            self.isRecord = !self.isRecord
+             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                 if self.speech != nil {
+                     self.speech.stopRecording()
+                 }
+                 AudioServicesPlaySystemSound(1114)
+                 ZVProgressHUD.dismiss()
+                 let ayah = SearchVoicePresenter.getAyahByVoiceText(text: self.textSearch)
+                 print(self.textSearch)
+                 if let ayah = ayah {
+                    self.tabBarController?.selectedIndex = 0
+                     AppFactory.homeVC?.search(ayah: ayah)
+                 }else {
+                    AlertClass2.ShowErrorStatusBar(vc: self, message: "search result not found".localized)
+                     if self.pulseEffect != nil {
+                         self.pulseEffect.removeFromSuperlayer()
+                     }                     
+                }
+                self.speech = nil
+             }
+            
+            DispatchQueue.main.async {
+                if self.isRecord {
+                    AudioServicesPlaySystemSound(1114)
+                    if self.pulseEffect != nil {
+                        self.pulseEffect.removeFromSuperlayer()
+                    }
+                }
+                self.isRecord = !self.isRecord
+            }
         }
     }
 }

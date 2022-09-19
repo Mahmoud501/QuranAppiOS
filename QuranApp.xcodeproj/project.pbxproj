@@ -309,7 +309,12 @@
 		06F3860D250FB3E9004812EE /* SelectReciterHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F3860C250FB3E9004812EE /* SelectReciterHeaderCell.swift */; };
 		06F38612250FB660004812EE /* ReciterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F38610250FB660004812EE /* ReciterCell.swift */; };
 		06F38613250FB660004812EE /* ReciterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06F38611250FB660004812EE /* ReciterCell.xib */; };
+		B708CCD627AE922C00DFF909 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B708CCD527AE922C00DFF909 /* GoogleService-Info.plist */; };
+		B708CCDA27AE937100DFF909 /* AppDelegate+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B708CCD927AE937100DFF909 /* AppDelegate+Firebase.swift */; };
 		B724FA8A25CBF1DB002B314E /* TestVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B724FA8925CBF1DB002B314E /* TestVController.swift */; };
+		B747193327C1133B007CDB3E /* VoiceReciteTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B747193227C1133B007CDB3E /* VoiceReciteTestVC.swift */; };
+		B75BD35527B0487400B23B05 /* whistles.wav in Resources */ = {isa = PBXBuildFile; fileRef = B75BD35427B0487400B23B05 /* whistles.wav */; };
+		B75BD35727B04F4900B23B05 /* note.wav in Resources */ = {isa = PBXBuildFile; fileRef = B75BD35627B04F4900B23B05 /* note.wav */; };
 		C41E8D1CD37367D5780ACA32 /* Pods_QuranApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B6E29DD947B4133B726D00 /* Pods_QuranApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -362,7 +367,7 @@
 		0626D766251769A3002AD860 /* WriteTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteTestVC.swift; sourceTree = "<group>"; };
 		0626D7682517753D002AD860 /* HomeVC+AyatOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+AyatOptions.swift"; sourceTree = "<group>"; };
 		0626D76B2517837F002AD860 /* VoiceTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceTestVC.swift; sourceTree = "<group>"; };
-		0628D74F250F489E00E9FBBA /* قرآننا.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "قرآننا.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0628D74F250F489E00E9FBBA /* QuranApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuranApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0628D752250F489E00E9FBBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0628D754250F489E00E9FBBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0628D759250F489E00E9FBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -638,7 +643,13 @@
 		4014D1132338DAF71B1B5346 /* Pods-QuranApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuranApp.debug.xcconfig"; path = "Target Support Files/Pods-QuranApp/Pods-QuranApp.debug.xcconfig"; sourceTree = "<group>"; };
 		59B6E29DD947B4133B726D00 /* Pods_QuranApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuranApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D610BD3FFAC6671A3237358 /* Pods-QuranApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuranApp.release.xcconfig"; path = "Target Support Files/Pods-QuranApp/Pods-QuranApp.release.xcconfig"; sourceTree = "<group>"; };
+		B708CCD427AE84CE00DFF909 /* QuranApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuranApp.entitlements; sourceTree = "<group>"; };
+		B708CCD527AE922C00DFF909 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B708CCD927AE937100DFF909 /* AppDelegate+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Firebase.swift"; sourceTree = "<group>"; };
 		B724FA8925CBF1DB002B314E /* TestVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVController.swift; sourceTree = "<group>"; };
+		B747193227C1133B007CDB3E /* VoiceReciteTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceReciteTestVC.swift; sourceTree = "<group>"; };
+		B75BD35427B0487400B23B05 /* whistles.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whistles.wav; sourceTree = "<group>"; };
+		B75BD35627B04F4900B23B05 /* note.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note.wav; sourceTree = "<group>"; };
 		B7EDC7B726207BFB002DC890 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -861,6 +872,7 @@
 		0626D762251768D7002AD860 /* Test Story */ = {
 			isa = PBXGroup;
 			children = (
+				B747193127C1130C007CDB3E /* VoiceReciteTest */,
 				0622E3BC251CBE5700EBDF9A /* TestHome */,
 				0622E3D3251CDA0800EBDF9A /* TestedAyat */,
 				0622E3AC251CB63B00EBDF9A /* CompleteTest */,
@@ -902,7 +914,7 @@
 		0628D750250F489E00E9FBBA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0628D74F250F489E00E9FBBA /* قرآننا.app */,
+				0628D74F250F489E00E9FBBA /* QuranApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -910,12 +922,16 @@
 		0628D751250F489E00E9FBBA /* QuranApp */ = {
 			isa = PBXGroup;
 			children = (
+				B75BD35627B04F4900B23B05 /* note.wav */,
+				B75BD35427B0487400B23B05 /* whistles.wav */,
+				B708CCD527AE922C00DFF909 /* GoogleService-Info.plist */,
+				B708CCD427AE84CE00DFF909 /* QuranApp.entitlements */,
+				0628D769250F48B800E9FBBA /* Application */,
 				068463E72532E169002F7019 /* Model */,
 				068463E62532E15C002F7019 /* Data */,
 				068520DA2529EC0100D59610 /* Sources */,
 				068520D52529ABE600D59610 /* Infrastructure */,
 				06F3857D250F5775004812EE /* Helper */,
-				0628D769250F48B800E9FBBA /* Application */,
 				0628D76A250F48BF00E9FBBA /* Presentation */,
 			);
 			path = QuranApp;
@@ -927,8 +943,9 @@
 				0628D763250F48A000E9FBBA /* Info.plist */,
 				0628D75B250F489E00E9FBBA /* QuranApp.xcdatamodeld */,
 				0628D75E250F489F00E9FBBA /* Assets.xcassets */,
-				0628D754250F489E00E9FBBA /* SceneDelegate.swift */,
 				0628D752250F489E00E9FBBA /* AppDelegate.swift */,
+				0628D754250F489E00E9FBBA /* SceneDelegate.swift */,
+				B708CCD927AE937100DFF909 /* AppDelegate+Firebase.swift */,
 				06162C3A252342990044CF57 /* Localizable.strings */,
 			);
 			path = Application;
@@ -963,7 +980,6 @@
 				0626D762251768D7002AD860 /* Test Story */,
 				066ADED32510A708005A7A44 /* Home Story */,
 				066ADED22510A6FC005A7A44 /* Main Story */,
-				06CC9B0B2512624F00383F66 /* TEST.swift */,
 				B724FA8925CBF1DB002B314E /* TestVController.swift */,
 			);
 			path = Scenes;
@@ -1433,6 +1449,7 @@
 				0626D7682517753D002AD860 /* HomeVC+AyatOptions.swift */,
 				066ADEFF251103ED005A7A44 /* HomeVC+TableView.swift */,
 				066ADF0125110EB2005A7A44 /* HomeVC+SwipCell.swift */,
+				06CC9B0B2512624F00383F66 /* TEST.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2036,6 +2053,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B747193127C1130C007CDB3E /* VoiceReciteTest */ = {
+			isa = PBXGroup;
+			children = (
+				B747193227C1133B007CDB3E /* VoiceReciteTestVC.swift */,
+			);
+			path = VoiceReciteTest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2048,6 +2073,7 @@
 				0628D74C250F489E00E9FBBA /* Frameworks */,
 				0628D74D250F489E00E9FBBA /* Resources */,
 				9975A37780504B9716E64265 /* [CP] Embed Pods Frameworks */,
+				B706E18F27AEA5F7003CB069 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2055,7 +2081,7 @@
 			);
 			name = QuranApp;
 			productName = QuranApp;
-			productReference = 0628D74F250F489E00E9FBBA /* قرآننا.app */;
+			productReference = 0628D74F250F489E00E9FBBA /* QuranApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2098,6 +2124,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75BD35727B04F4900B23B05 /* note.wav in Resources */,
 				0672F3AD252DAECA0032C1B9 /* yasser-salama.jpg in Resources */,
 				0672F3CC252DAECA0032C1B9 /* Ahmed Al Ajmi.png in Resources */,
 				06F38590250F577E004812EE /* UthmanTN1 Ver10.otf in Resources */,
@@ -2114,6 +2141,7 @@
 				068520F5252C73DE00D59610 /* ar.jalalayn.txt in Resources */,
 				0672F3A8252DAECA0032C1B9 /* fares-abbad.png in Resources */,
 				06F38591250F577E004812EE /* MADDINA.ttf in Resources */,
+				B75BD35527B0487400B23B05 /* whistles.wav in Resources */,
 				06EDBCDB25236D4E004A416B /* SearchVoice.storyboard in Resources */,
 				0672F3C4252DAECA0032C1B9 /* sahl-yassin.png in Resources */,
 				06162C3D252348DD0044CF57 /* Setting.storyboard in Resources */,
@@ -2205,6 +2233,7 @@
 				06F38593250F577E004812EE /* uthmanic_hafs_ver12.otf in Resources */,
 				06F385A3250F5798004812EE /* Cairo-SemiBold.ttf in Resources */,
 				0696E26C2520A4E60004CE0B /* FAQCell.xib in Resources */,
+				B708CCD627AE922C00DFF909 /* GoogleService-Info.plist in Resources */,
 				06C64B97251218D4005FD8FE /* logo_icon.png in Resources */,
 				065F2A3D2513A39400D2DD86 /* SelectTafseerCell.xib in Resources */,
 			);
@@ -2252,6 +2281,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuranApp/Pods-QuranApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B706E18F27AEA5F7003CB069 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -2270,6 +2318,7 @@
 				068463FD2533264E002F7019 /* OptionVC+Delegate.swift in Sources */,
 				06F385D3250F8CE0004812EE /* ZDSegmentSlider.swift in Sources */,
 				066ADF0225110EB2005A7A44 /* HomeVC+SwipCell.swift in Sources */,
+				B708CCDA27AE937100DFF909 /* AppDelegate+Firebase.swift in Sources */,
 				0626D7692517753D002AD860 /* HomeVC+AyatOptions.swift in Sources */,
 				06961851255C3274004A90A1 /* AboutusPresenter.swift in Sources */,
 				06F3860A250FB257004812EE /* SelectReciterVC.swift in Sources */,
@@ -2428,6 +2477,7 @@
 				06DA32CC256BD852009AE89E /* PDFQuranVC.swift in Sources */,
 				06F385CF250F8CE0004812EE /* CBTabBarButton.swift in Sources */,
 				065F2A2E25139D3500D2DD86 /* TafseerPopupMenu.swift in Sources */,
+				B747193327C1133B007CDB3E /* VoiceReciteTestVC.swift in Sources */,
 				0672F3D2252DB4A90032C1B9 /* ReciterName.swift in Sources */,
 				0696185B255D48A4004A90A1 /* SettingHomeVC+PresenterDelegate.swift in Sources */,
 				06961861255D523F004A90A1 /* ContactusPresenter.swift in Sources */,
@@ -2724,9 +2774,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = QuranApp/QuranApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 4673NFB24A;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = QuranApp/Application/Info.plist;
@@ -2735,10 +2787,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.8;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = Wakeb.QuranApp;
-				PRODUCT_NAME = "قرآننا";
+				PRODUCT_NAME = QuranApp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "QuranApp/Helper/Lib/Arabic/QuranApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2753,6 +2805,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = QuranApp/QuranApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2763,10 +2816,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.8;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = Wakeb.QuranApp;
-				PRODUCT_NAME = "قرآننا";
+				PRODUCT_NAME = QuranApp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "QuranApp/Helper/Lib/Arabic/QuranApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

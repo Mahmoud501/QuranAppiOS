@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X9a-p1-aWp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X9a-p1-aWp">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -24,7 +24,7 @@
         <!--Write TestVC-->
         <scene sceneID="Fh0-jd-gaP">
             <objects>
-                <viewController storyboardIdentifier="WriteTestVC" id="HZW-CD-VNS" customClass="WriteTestVC" customModule="قرآننا" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WriteTestVC" id="HZW-CD-VNS" customClass="WriteTestVC" customModule="QuranApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q1G-qy-Mlj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,7 +290,7 @@
         <!--Voice TestVC-->
         <scene sceneID="ofi-Gt-RNb">
             <objects>
-                <viewController storyboardIdentifier="VoiceTestVC" id="OBh-wJ-OUM" customClass="VoiceTestVC" customModule="قرآننا" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VoiceTestVC" id="OBh-wJ-OUM" customClass="VoiceTestVC" customModule="QuranApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="POz-IU-cVo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -315,7 +315,7 @@
                                                         <rect key="frame" x="15" y="10" width="255" height="50"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Voice Test" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZT-R3-GNs">
-                                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="68" height="50"/>
                                                                 <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
                                                                 <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -324,16 +324,16 @@
                                                                 </variation>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="802-Qw-zgo">
-                                                                <rect key="frame" x="72.5" y="0.0" width="182.5" height="50"/>
+                                                                <rect key="frame" x="68" y="0.0" width="187" height="50"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbG-v9-Gr1">
-                                                                        <rect key="frame" x="20" y="7.5" width="119.5" height="35.5"/>
+                                                                        <rect key="frame" x="20" y="3" width="116.5" height="44.5"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vbx-FR-reA">
-                                                                                <rect key="frame" x="15" y="10" width="89.5" height="15.5"/>
+                                                                                <rect key="frame" x="15" y="10" width="86.5" height="24.5"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aya Num: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSJ-Wa-VjY">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="15.5"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="24.5"/>
                                                                                         <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="13"/>
                                                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
@@ -342,7 +342,7 @@
                                                                                         </variation>
                                                                                     </label>
                                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="Eao-zw-Sc6">
-                                                                                        <rect key="frame" x="77.5" y="0.0" width="12" height="15.5"/>
+                                                                                        <rect key="frame" x="74.5" y="0.0" width="12" height="24.5"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="width" constant="12" id="D5R-Ct-qRp"/>
                                                                                         </constraints>
@@ -350,7 +350,7 @@
                                                                                 </subviews>
                                                                             </stackView>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1E-ae-aIe">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="119.5" height="35.5"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="116.5" height="44.5"/>
                                                                                 <connections>
                                                                                     <action selector="ayaNumClicked:" destination="OBh-wJ-OUM" eventType="touchUpInside" id="hIc-pq-ibP"/>
                                                                                 </connections>
@@ -661,7 +661,7 @@
         <!--Word TestVC-->
         <scene sceneID="VEu-82-mI1">
             <objects>
-                <viewController storyboardIdentifier="WordTestVC" id="UMm-px-2iD" customClass="WordTestVC" customModule="قرآننا" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WordTestVC" id="UMm-px-2iD" customClass="WordTestVC" customModule="QuranApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wZx-BM-GaA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -672,7 +672,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FBE-Av-LUO">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="20"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dnn-vu-eeg" customClass="BackStackView" customModule="قرآننا" customModuleProvider="target">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dnn-vu-eeg" customClass="BackStackView" customModule="QuranApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="175" height="20"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfz-rZ-xQF">
@@ -774,7 +774,7 @@
         <!--Sort TestVC-->
         <scene sceneID="Wu9-xN-yhF">
             <objects>
-                <viewController storyboardIdentifier="SortTestVC" id="u2G-0D-zz7" customClass="SortTestVC" customModule="قرآننا" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SortTestVC" id="u2G-0D-zz7" customClass="SortTestVC" customModule="QuranApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Fi-dS-8oM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -785,7 +785,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="L2f-E9-Umb">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="20"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="K4k-ai-VYa" customClass="BackStackView" customModule="قرآننا" customModuleProvider="target">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="K4k-ai-VYa" customClass="BackStackView" customModule="QuranApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="175" height="20"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe5-QJ-GRk">
@@ -889,7 +889,7 @@
         <!--CompleteVC-->
         <scene sceneID="5kD-OW-uUf">
             <objects>
-                <viewController storyboardIdentifier="CompleteVC" id="hKZ-1R-7Fg" customClass="CompleteVC" customModule="قرآننا" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CompleteVC" id="hKZ-1R-7Fg" customClass="CompleteVC" customModule="QuranApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f2a-Za-pdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -900,7 +900,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xdG-m6-vJD">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="20"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VOJ-LQ-WUF" customClass="BackStackView" customModule="قرآننا" customModuleProvider="target">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VOJ-LQ-WUF" customClass="BackStackView" customModule="QuranApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="290" height="20"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGe-Rg-da2">
@@ -1001,7 +1001,7 @@
         <!--Test HomeVC-->
         <scene sceneID="3Ju-C1-pYy">
             <objects>
-                <viewController storyboardIdentifier="TestHomeVC" id="X9a-p1-aWp" customClass="TestHomeVC" customModule="قرآننا" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TestHomeVC" id="X9a-p1-aWp" customClass="TestHomeVC" customModule="QuranApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AEI-QA-iFq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1013,10 +1013,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="110"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mW7-3j-xkk">
-                                                <rect key="frame" x="0.0" y="10" width="164" height="90.5"/>
+                                                <rect key="frame" x="0.0" y="27" width="164" height="56.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memorized" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYs-sY-SwW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="164" height="41.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="164" height="26"/>
                                                         <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="22"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -1025,7 +1025,7 @@
                                                         </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is Your Test Percent of saved Quran" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATS-Jq-61a">
-                                                        <rect key="frame" x="0.0" y="41.5" width="164" height="49"/>
+                                                        <rect key="frame" x="0.0" y="26" width="164" height="30.5"/>
                                                         <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="13"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1128,7 +1128,7 @@
         <!--Tested Ayat-->
         <scene sceneID="TAP-Wu-0iE">
             <objects>
-                <viewController storyboardIdentifier="TestedAyat" id="S8w-xa-IdE" customClass="TestedAyat" customModule="قرآننا" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TestedAyat" id="S8w-xa-IdE" customClass="TestedAyat" customModule="QuranApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vJx-7B-QlF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1136,7 +1136,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="V1G-M9-vNa">
                                 <rect key="frame" x="15" y="10" width="290" height="120"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8q0-Sd-KlM" customClass="BackStackView" customModule="قرآننا" customModuleProvider="target">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8q0-Sd-KlM" customClass="BackStackView" customModule="QuranApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCr-hG-sKw">
@@ -1254,6 +1254,160 @@
             </objects>
             <point key="canvasLocation" x="650.72463768115949" y="873.88392857142856"/>
         </scene>
+        <!--Voice Recite TestVC-->
+        <scene sceneID="TVW-0n-PkD">
+            <objects>
+                <viewController storyboardIdentifier="VoiceReciteTestVC" id="DVd-xe-MPu" customClass="VoiceReciteTestVC" customModule="QuranApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C0j-c3-jvr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tko-YQ-nVw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="peR-YL-cBs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Tc-Fa-glR">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jfi-5L-ro5">
+                                                <rect key="frame" x="13" y="8" width="45" height="45"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_close_24px" translatesAutoresizingMaskIntoConstraints="NO" id="pSx-qQ-7fB">
+                                                        <rect key="frame" x="11.5" y="16.5" width="22.5" height="12"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1J-6v-olT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                        <connections>
+                                                            <action selector="backClicked:" destination="DVd-xe-MPu" eventType="touchUpInside" id="Dnq-rU-vps"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="q1J-6v-olT" firstAttribute="leading" secondItem="Jfi-5L-ro5" secondAttribute="leading" id="4Hs-Ya-a18"/>
+                                                    <constraint firstItem="pSx-qQ-7fB" firstAttribute="height" secondItem="Jfi-5L-ro5" secondAttribute="height" multiplier="0.266667" id="82R-dv-qzA"/>
+                                                    <constraint firstItem="pSx-qQ-7fB" firstAttribute="centerX" secondItem="Jfi-5L-ro5" secondAttribute="centerX" id="BNV-vF-Xpb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="q1J-6v-olT" secondAttribute="trailing" id="N4m-1E-e6P"/>
+                                                    <constraint firstItem="pSx-qQ-7fB" firstAttribute="centerY" secondItem="Jfi-5L-ro5" secondAttribute="centerY" id="SJr-1L-OFX"/>
+                                                    <constraint firstItem="pSx-qQ-7fB" firstAttribute="width" secondItem="Jfi-5L-ro5" secondAttribute="width" multiplier="0.5" id="V8G-se-5xB"/>
+                                                    <constraint firstAttribute="width" constant="45" id="ZBi-Vz-cWT"/>
+                                                    <constraint firstItem="q1J-6v-olT" firstAttribute="top" secondItem="Jfi-5L-ro5" secondAttribute="top" id="acZ-e3-O2n"/>
+                                                    <constraint firstAttribute="bottom" secondItem="q1J-6v-olT" secondAttribute="bottom" id="wta-Xh-tDR"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6x-xb-lUH">
+                                                <rect key="frame" x="130" y="483" width="60" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="9vB-Ei-3TN">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" secondItem="t6x-xb-lUH" secondAttribute="height" multiplier="1:1" id="Ndw-1Z-shF"/>
+                                                </constraints>
+                                                <state key="normal" image="redRecord">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="recordClicked:" destination="DVd-xe-MPu" eventType="touchUpInside" id="5zi-aC-Tn3"/>
+                                                    <action selector="recordClicked:" destination="OBh-wJ-OUM" eventType="touchUpInside" id="ktv-pT-j1G"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KE-cJ-P0h">
+                                                <rect key="frame" x="10" y="63" width="300" height="410"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epf-jy-86A">
+                                                <rect key="frame" x="13" y="63" width="45" height="45"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kad-YA-98b">
+                                                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                        <color key="backgroundColor" name="C4"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Skip">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="skipClicked:" destination="DVd-xe-MPu" eventType="touchUpInside" id="r7W-bM-Icr"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="45" id="3Ca-uM-1ot"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Kad-YA-98b" secondAttribute="trailing" id="6Pt-ut-Yzw"/>
+                                                    <constraint firstItem="Kad-YA-98b" firstAttribute="leading" secondItem="epf-jy-86A" secondAttribute="leading" id="9qj-SE-gzf"/>
+                                                    <constraint firstItem="Kad-YA-98b" firstAttribute="top" secondItem="epf-jy-86A" secondAttribute="top" id="EZv-Zw-Lj4"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Kad-YA-98b" secondAttribute="bottom" id="v1P-7a-mmO"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هذه الخاصية تحت التجربة ولا تعمل مع ايات الحروف المتقطعه اللي في بداية بعض سور القرآن" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKV-PI-UCW">
+                                                <rect key="frame" x="68" y="13.5" width="242" height="34"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="9"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="t6x-xb-lUH" firstAttribute="centerX" secondItem="5Tc-Fa-glR" secondAttribute="centerX" id="8kT-TY-kbm"/>
+                                            <constraint firstItem="CKV-PI-UCW" firstAttribute="centerY" secondItem="q1J-6v-olT" secondAttribute="centerY" id="ESz-Fi-Ndf"/>
+                                            <constraint firstAttribute="bottom" secondItem="t6x-xb-lUH" secondAttribute="bottom" constant="25" id="GWI-lm-EjN"/>
+                                            <constraint firstItem="epf-jy-86A" firstAttribute="centerX" secondItem="q1J-6v-olT" secondAttribute="centerX" id="MDx-BF-Y2d"/>
+                                            <constraint firstItem="epf-jy-86A" firstAttribute="top" secondItem="Jfi-5L-ro5" secondAttribute="bottom" constant="10" id="ONJ-b5-y8o"/>
+                                            <constraint firstItem="Jfi-5L-ro5" firstAttribute="leading" secondItem="5Tc-Fa-glR" secondAttribute="leading" constant="13" id="RXd-3b-fEZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="CKV-PI-UCW" secondAttribute="trailing" constant="10" id="S0U-iV-sRz"/>
+                                            <constraint firstItem="Jfi-5L-ro5" firstAttribute="width" secondItem="Jfi-5L-ro5" secondAttribute="height" multiplier="1:1" id="SVo-cF-bYn"/>
+                                            <constraint firstItem="9KE-cJ-P0h" firstAttribute="leading" secondItem="5Tc-Fa-glR" secondAttribute="leading" constant="10" id="a1O-cu-gOR"/>
+                                            <constraint firstItem="Jfi-5L-ro5" firstAttribute="top" secondItem="5Tc-Fa-glR" secondAttribute="top" constant="8" id="a8V-Lq-cZn"/>
+                                            <constraint firstAttribute="trailing" secondItem="9KE-cJ-P0h" secondAttribute="trailing" constant="10" id="ajP-PB-FMx"/>
+                                            <constraint firstItem="t6x-xb-lUH" firstAttribute="top" secondItem="9KE-cJ-P0h" secondAttribute="bottom" constant="10" id="cfN-WT-Ptk"/>
+                                            <constraint firstItem="CKV-PI-UCW" firstAttribute="leading" secondItem="Jfi-5L-ro5" secondAttribute="trailing" constant="10" id="iva-jt-xbb"/>
+                                            <constraint firstItem="9KE-cJ-P0h" firstAttribute="top" secondItem="Jfi-5L-ro5" secondAttribute="bottom" constant="10" id="j6o-6E-Shj"/>
+                                            <constraint firstItem="epf-jy-86A" firstAttribute="width" secondItem="epf-jy-86A" secondAttribute="height" multiplier="1:1" id="lz2-sE-fSQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cQ0-ZA-UAT"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cQ0-ZA-UAT" firstAttribute="trailing" secondItem="5Tc-Fa-glR" secondAttribute="trailing" id="1ZE-NJ-2TT"/>
+                            <constraint firstAttribute="bottom" secondItem="peR-YL-cBs" secondAttribute="bottom" id="1wY-S7-dRM"/>
+                            <constraint firstItem="peR-YL-cBs" firstAttribute="top" secondItem="C0j-c3-jvr" secondAttribute="top" id="4ge-vO-1of"/>
+                            <constraint firstItem="peR-YL-cBs" firstAttribute="leading" secondItem="cQ0-ZA-UAT" secondAttribute="leading" id="Bng-zn-Aof"/>
+                            <constraint firstItem="tko-YQ-nVw" firstAttribute="top" secondItem="C0j-c3-jvr" secondAttribute="top" id="JHz-vi-6SA"/>
+                            <constraint firstItem="cQ0-ZA-UAT" firstAttribute="bottom" secondItem="5Tc-Fa-glR" secondAttribute="bottom" id="NZx-7Z-auu"/>
+                            <constraint firstItem="5Tc-Fa-glR" firstAttribute="leading" secondItem="cQ0-ZA-UAT" secondAttribute="leading" id="OMi-Bz-n2u"/>
+                            <constraint firstItem="tko-YQ-nVw" firstAttribute="leading" secondItem="C0j-c3-jvr" secondAttribute="leading" id="OvE-Dh-c1Y"/>
+                            <constraint firstAttribute="trailing" secondItem="peR-YL-cBs" secondAttribute="trailing" id="TLs-g8-bSo"/>
+                            <constraint firstAttribute="bottom" secondItem="tko-YQ-nVw" secondAttribute="bottom" id="cEl-Zw-AsD"/>
+                            <constraint firstItem="5Tc-Fa-glR" firstAttribute="top" secondItem="cQ0-ZA-UAT" secondAttribute="top" id="e8J-aA-mzB"/>
+                            <constraint firstAttribute="trailing" secondItem="tko-YQ-nVw" secondAttribute="trailing" id="qwq-h7-sy0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnRecord" destination="t6x-xb-lUH" id="d5u-iq-NEu"/>
+                        <outlet property="lblText" destination="9KE-cJ-P0h" id="vZj-NF-t1A"/>
+                        <outlet property="vuClose" destination="Jfi-5L-ro5" id="7X5-fS-5pi"/>
+                        <outlet property="vuContent" destination="peR-YL-cBs" id="Owt-Bq-YXX"/>
+                        <outlet property="vuSkip" destination="epf-jy-86A" id="Cbo-oI-DnB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ICD-7G-yag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417.5" y="868.30985915492954"/>
+        </scene>
     </scenes>
     <resources>
         <image name="NoPath" width="80" height="80"/>
@@ -1261,6 +1415,7 @@
         <image name="backBlueIcon" width="15" height="24"/>
         <image name="backligthicon" width="13" height="22"/>
         <image name="ic_cancel_24px" width="20" height="20"/>
+        <image name="ic_close_24px" width="12" height="12"/>
         <image name="profile" width="29" height="29"/>
         <image name="redRecord" width="57" height="57"/>
         <image name="sending" width="64" height="64"/>

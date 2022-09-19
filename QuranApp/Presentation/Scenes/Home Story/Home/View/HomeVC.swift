@@ -13,8 +13,6 @@ import AVFoundation
 import Speech
 import ZVProgressHUD
 
-import AppCenterCrashes
-import AppCenter
 //test
 
 class HomeVC: BaseViewController{
@@ -79,43 +77,43 @@ class HomeVC: BaseViewController{
         UIImpactFeedbackGenerator.init(style: UIImpactFeedbackGenerator.FeedbackStyle.light).impactOccurred()
         if let path = presenter?.getFilePDF() {
                     if vuSuperContainer.alpha == 1 {
-                        if let indexPaths = self.TVAyat.indexPathsForVisibleRows {
-                            let indexPathMiddle = ceil(Double(indexPaths.count) / 2.0)
-                            let IntMiddle = Int(indexPathMiddle)
-                            if let ayah = presenter?.getAyah(section: indexPaths[IntMiddle].section, row: indexPaths[IntMiddle].row) {
-                                pdfQuranVC.ayah = ayah
-                                self.vuSuperContainer.alpha = 0
-                                self.CustomQuranPDF.alpha = 1
-                                self.view.backgroundColor = UIColor.init(displayP3Red: 1, green: 1, blue: 231/255, alpha: 1)
-                            }else if let ayah = presenter?.getAyah(section: indexPaths[IntMiddle].section, row: indexPaths[IntMiddle].row - 1) {
-                                pdfQuranVC.ayah = ayah
-                                self.vuSuperContainer.alpha = 0
-                                self.CustomQuranPDF.alpha = 1
-                                self.view.backgroundColor = UIColor.init(displayP3Red: 1, green: 1, blue: 231/255, alpha: 1)
+                        if self.TVAyat != nil {
+                            if let indexPaths = self.TVAyat.indexPathsForVisibleRows {
+                                if indexPaths.count > 0 {
+                                    let indexPathMiddle = ceil(Double(indexPaths.count) / Double(2.0))
+                                    let IntMiddle = Int(indexPathMiddle)
+                                    if let ayah = presenter?.getAyah(section: indexPaths[IntMiddle].section, row: indexPaths[IntMiddle].row) {
+                                        pdfQuranVC.ayah = ayah
+                                        self.vuSuperContainer.alpha = 0
+                                        self.CustomQuranPDF.alpha = 1
+                                        self.view.backgroundColor = UIColor.init(displayP3Red: 1, green: 1, blue: 231/255, alpha: 1)
+                                    }else if let ayah = presenter?.getAyah(section: indexPaths[IntMiddle].section, row: indexPaths[IntMiddle].row - 1) {
+                                        pdfQuranVC.ayah = ayah
+                                        self.vuSuperContainer.alpha = 0
+                                        self.CustomQuranPDF.alpha = 1
+                                        self.view.backgroundColor = UIColor.init(displayP3Red: 1, green: 1, blue: 231/255, alpha: 1)
+                                    }
+                                }
                             }
-                        }
+                        }                      
                     }else {
                         self.CustomQuranPDF.alpha = 0
                         self.vuSuperContainer.alpha = 1
                         self.view.backgroundColor = .white
                     }
-
-            
-            
-            
         }else {
             let alertContoller = UIAlertController.init(title: "Download".localized, message: "downMessge".localized, preferredStyle: UIAlertController.Style.alert)
 
             alertContoller.addAction(UIAlertAction.init(title: "Ok".localized, style: UIAlertAction.Style.default, handler: { (com) in
                 self.presenter?.networkSetting.test(loading: { (process) in                    
-                    ProgressHUD.shared.showProgress(Float(process))
+                    ZVProgressHUD.showProgress(Float(process))
                 }, success: {
                     AlertClass2.ShowSuccessMessage(vc: nil, message: "downMessgeSucc".localized, title: "Download".localized, interact: true)
                     self.pdfQuranVC.path = self.presenter?.getFilePDF()
                     self.pdfQuranVC.openPDF()
-                    ProgressHUD.shared.dismiss()
+                    ZVProgressHUD.dismiss()
                 }, failure: { (err) in
-                    ProgressHUD.shared.dismiss()
+                    ZVProgressHUD.dismiss()
                     AlertClass2.ShowErrorStatusBar(vc: nil, message: err)
                 })
             }))
@@ -168,15 +166,11 @@ extension HomeVC {
         } else {
             // Fallback on earlier versions
         }
-        AppCenter.start(withAppSecret: "84112553-2a2f-4ce9-8b2d-5f43c921eb73", services:[
-          Crashes.self
-        ])
         AppFactory.homeVC = self
         presenter = HomePresenter()
         searchVC = SearchTextVC.createVC()
         setupUI()
         didChangeReciter()
-        
         presenter?.getHome { [weak self] in
             guard let self = self else { return }
             DispatchQueue.main.async {
@@ -184,7 +178,6 @@ extension HomeVC {
                 self.goToLastCell()
             }
         }
-        
     }
     
     override func viewDidLayoutSubviews() {
@@ -201,6 +194,12 @@ extension HomeVC {
 extension HomeVC {
     
     func setupUI() {
+        let updateSurha = UserDefaultClass.getValue("updateSurha") as? Bool
+        if updateSurha == nil {
+            SurhaManger.correctSurhaNames()
+            AppFactory.homeVC?.TVAyat.reloadData()
+            UserDefaultClass.setValue("updateSurha", true)
+        }
         vuOptions.hideWriteView = self.TVAyat
         vuMark.setCirleCornerRadius()
         self.vuOptions.alpha = 0
@@ -220,6 +219,12 @@ extension HomeVC {
         TVAyat.register(UINib.init(nibName: "FooterHomeCell", bundle: nil), forCellReuseIdentifier: "FooterHomeCell")        
         TVAyat.rowHeight = UITableView.automaticDimension
         TVAyat.estimatedRowHeight = UITableView.automaticDimension
+        if #available(iOS 15.0, *) {
+            TVAyat.sectionHeaderTopPadding = 0.0
+        } else {
+            // Fallback on earlier versions
+        }
+
         vuOptions.vc = self
        // checkPermissionMic()
          setupQuranPDF()
@@ -432,3 +437,9 @@ extension LGSideMenuController {
     
 }
 
+extension String {
+    static func mm(string:String, regex:String) -> Bool {
+        return string.range(of: regex, options: String.CompareOptions.regularExpression, range: nil, locale: nil) != nil
+    }
+
+}

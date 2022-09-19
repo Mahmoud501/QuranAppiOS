@@ -98,9 +98,10 @@ class WriteTestVC: UIViewController {
     
     
     static func checkText(ayah: CAyatModel?, testString: String) -> (String, String, Bool)? {
+        print("\"" + testString + "\"")
         if testString.isEmpty == false {
             var testString = testString.ayahFilter2
-            let correctText = (ayah?.simple_desc ?? "").ayahFilter2
+            var correctText = (ayah?.simple_desc ?? "").ayahFilter2
             let correctText0 = (ayah?.simple_desc ?? "")
             let correctText2 = ayah?.desc ?? ""
             var correctWords0 = correctText0.split(separator: " ")
@@ -108,7 +109,10 @@ class WriteTestVC: UIViewController {
             var correctWords2 = (ayah?.desc ?? "").split(separator: " ")
             var testWords = testString.split(separator: " ")
             testWords = testWords.filter { $0 != " " }
-            testString = testWords.joined(separator: " ")
+            //handle some words that came with space
+            if(testWords.count == 1) {
+                correctText = correctText.replacingOccurrences(of: " ", with: "")
+            }
             if correctText.ayahFilter == testString.ayahFilter {
                 return (correctText, correctText2, true)
             }
@@ -170,7 +174,73 @@ class WriteTestVC: UIViewController {
         }
         return nil
     }
-    
+    //current text , isFinished
+    static func checkVoiceText(ayah: CAyatModel?, testString: String, lastIndex: Int = 0) -> (String, Bool)? {
+        print(testString.split(separator: " ").last)
+        let testString = testString.ayahFilter2.ayahFilter.ayahVoiceFilter
+        let lastWord = testString.split(separator: " ").last
+        
+        if let lastWord = lastWord, lastWord != "" {
+            let realCorrectText = (ayah?.simple_desc ?? "").split(separator: " ")
+            var correctText = (ayah?.simple_desc ?? "").ayahFilter2.ayahFilter.ayahVoiceFilter
+            var correctwords = correctText.split(separator: " ")
+            var position = -1
+
+            if correctwords.count == 1 {
+            print(lastWord)
+                if (lastWord == correctwords.last) {
+                    return (realCorrectText.joined(separator: "").description, true)
+                }else {
+                    return nil
+                }
+            }
+            var index = 0
+            var arrPosition: [Int] = []
+            for item in correctwords {
+                if item.contains(lastWord) {
+                    position = index
+                    arrPosition.append(position)
+                }
+                index = index + 1
+            }
+            print(position)
+            if position == -1 {
+                return nil
+            }
+            var resultString = ""
+            var choosePosition: Int = 0
+            if arrPosition.count == 1 {
+                choosePosition = arrPosition.first!
+                resultString = realCorrectText[0...position].joined(separator: " ")
+            }else {
+                var biggerArrIndex: [Int] = []
+                for item in arrPosition {
+                    if item > lastIndex {
+                        biggerArrIndex.append(item)
+                    }
+                }
+                choosePosition = biggerArrIndex.first ?? 0
+                resultString = realCorrectText[0...choosePosition].joined(separator: " ")
+            }
+            if choosePosition < lastIndex {
+                return nil
+            }
+            if choosePosition > lastIndex + 4 {
+                return nil
+            }
+            print(lastIndex,choosePosition, arrPosition, "gggggggggg")
+            if choosePosition == correctwords.count - 1 {
+                let precent = (lastWord.count / (correctwords.last?.count ?? 1)) * 100
+                if precent >= 75 {
+
+                }
+                return (resultString, true)
+            }
+            return (resultString, false)
+        }
+
+        return nil
+    }
     
     func test() {
             let testarr = [

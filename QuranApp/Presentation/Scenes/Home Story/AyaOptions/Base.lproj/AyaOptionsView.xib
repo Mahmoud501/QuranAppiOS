@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -61,16 +61,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="63" height="49.5"/>
                                             <subviews>
                                                 <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hsn-Yw-K5A">
-                                                    <rect key="frame" x="0.0" y="0.0" width="63" height="35.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="63" height="28.5"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lx3-Mr-U0h">
-                                                            <rect key="frame" x="0.0" y="0.0" width="63" height="35.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="63" height="28.5"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="TZe-Hd-e4w">
-                                                                    <rect key="frame" x="19" y="10.5" width="25" height="14.5"/>
+                                                                    <rect key="frame" x="19" y="8.5" width="25" height="11.5"/>
                                                                 </imageView>
                                                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3No-AH-QS2">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="63" height="35.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="63" height="28.5"/>
                                                                     <state key="normal" image="play"/>
                                                                 </button>
                                                             </subviews>
@@ -96,7 +96,7 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="755" text="Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3e-bp-Wp3">
-                                                    <rect key="frame" x="0.0" y="37.5" width="63" height="12"/>
+                                                    <rect key="frame" x="0.0" y="30.5" width="63" height="19"/>
                                                     <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="10"/>
                                                     <color key="textColor" name="C4"/>
                                                     <nil key="highlightedColor"/>
@@ -116,16 +116,16 @@
                                     <rect key="frame" x="88" y="0.0" width="62.5" height="49.5"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsH-Gp-TCS">
-                                            <rect key="frame" x="0.0" y="0.0" width="62.5" height="35.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="62.5" height="28.5"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5j6-w2-jih">
-                                                    <rect key="frame" x="0.0" y="0.0" width="62.5" height="35.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="62.5" height="28.5"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="9En-wq-O2q">
-                                                            <rect key="frame" x="18.5" y="10.5" width="25.5" height="14.5"/>
+                                                            <rect key="frame" x="18.5" y="8.5" width="25" height="11.5"/>
                                                         </imageView>
                                                         <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsq-gE-Qhc">
-                                                            <rect key="frame" x="0.0" y="0.0" width="62.5" height="35.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="62.5" height="28.5"/>
                                                             <state key="normal" image="tafser"/>
                                                         </button>
                                                     </subviews>
@@ -151,7 +151,7 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="755" text="Tafseer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eED-ij-toY">
-                                            <rect key="frame" x="15" y="37.5" width="32.5" height="12"/>
+                                            <rect key="frame" x="15.5" y="30.5" width="31.5" height="19"/>
                                             <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="10"/>
                                             <color key="textColor" name="C4"/>
                                             <nil key="highlightedColor"/>
@@ -162,16 +162,16 @@
                                     <rect key="frame" x="175.5" y="0.0" width="63" height="49.5"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbU-GE-mEw">
-                                            <rect key="frame" x="0.0" y="0.0" width="63" height="35.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="63" height="28.5"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1G-5T-8Ah">
-                                                    <rect key="frame" x="0.0" y="0.0" width="63" height="35.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="63" height="28.5"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="yxK-Zx-MXt">
-                                                            <rect key="frame" x="19" y="10.5" width="25" height="14.5"/>
+                                                            <rect key="frame" x="19" y="8.5" width="25" height="11.5"/>
                                                         </imageView>
                                                         <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUq-Mg-7uP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="63" height="35.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="63" height="28.5"/>
                                                             <state key="normal" image="Group 31"/>
                                                         </button>
                                                     </subviews>
@@ -197,7 +197,7 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="755" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdu-Ds-XGN">
-                                            <rect key="frame" x="22.5" y="37.5" width="18.5" height="12"/>
+                                            <rect key="frame" x="22.5" y="30.5" width="18" height="19"/>
                                             <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="10"/>
                                             <color key="textColor" name="C4"/>
                                             <nil key="highlightedColor"/>
@@ -208,16 +208,16 @@
                                     <rect key="frame" x="263.5" y="0.0" width="62.5" height="49.5"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9a7-NE-w2b">
-                                            <rect key="frame" x="0.0" y="0.0" width="62.5" height="35.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="62.5" height="28.5"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1d4-BW-NHV">
-                                                    <rect key="frame" x="0.0" y="0.0" width="62.5" height="35.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="62.5" height="28.5"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="F5k-An-Kqn">
-                                                            <rect key="frame" x="18.5" y="10.5" width="25.5" height="14.5"/>
+                                                            <rect key="frame" x="19" y="8.5" width="25" height="11.5"/>
                                                         </imageView>
                                                         <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJz-FN-pgb">
-                                                            <rect key="frame" x="0.0" y="0.0" width="62.5" height="35.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="62.5" height="28.5"/>
                                                             <state key="normal" image="ic_brush_24px"/>
                                                         </button>
                                                     </subviews>
@@ -243,7 +243,7 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="755" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L39-uD-bWU">
-                                            <rect key="frame" x="19" y="37.5" width="24.5" height="12"/>
+                                            <rect key="frame" x="20.5" y="30.5" width="22" height="19"/>
                                             <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="10"/>
                                             <color key="textColor" name="C4"/>
                                             <nil key="highlightedColor"/>
@@ -254,16 +254,16 @@
                                     <rect key="frame" x="351" y="0.0" width="63" height="49.5"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXY-cf-8aM">
-                                            <rect key="frame" x="0.0" y="0.0" width="63" height="35.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="63" height="28.5"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBc-dL-ily">
-                                                    <rect key="frame" x="0.0" y="0.0" width="63" height="35.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="63" height="28.5"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="Dxg-94-5xt">
-                                                            <rect key="frame" x="19" y="10.5" width="25" height="14.5"/>
+                                                            <rect key="frame" x="19" y="8.5" width="25" height="11.5"/>
                                                         </imageView>
                                                         <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5o-a0-gOd">
-                                                            <rect key="frame" x="0.0" y="0.0" width="63" height="35.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="63" height="28.5"/>
                                                             <state key="normal" image="ic_check_24px"/>
                                                         </button>
                                                     </subviews>
@@ -289,7 +289,7 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="755" text="Clear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjY-Aa-eO9">
-                                            <rect key="frame" x="19.5" y="37.5" width="24" height="12"/>
+                                            <rect key="frame" x="21" y="30.5" width="21.5" height="19"/>
                                             <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="10"/>
                                             <color key="textColor" name="C4"/>
                                             <nil key="highlightedColor"/>
@@ -360,6 +360,7 @@
                     </constraints>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Jvz-XF-zQ6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3Ez-JP-CVb"/>
@@ -368,7 +369,6 @@
                 <constraint firstItem="Jvz-XF-zQ6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zwY-q7-AUq"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="455.625" y="141.5492957746479"/>
         </view>
     </objects>

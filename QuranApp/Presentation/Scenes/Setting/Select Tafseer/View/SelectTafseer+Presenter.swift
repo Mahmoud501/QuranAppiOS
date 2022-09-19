@@ -12,7 +12,7 @@ import ZVProgressHUD
 extension SelectTafseerVC: TafseerDownloadView {
     
     func finish() {
-        ProgressHUD.shared.dismiss()
+        ZVProgressHUD.dismiss()
     }
     
     func success() {
